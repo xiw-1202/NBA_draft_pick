@@ -1,0 +1,698 @@
+team,year,ap_rank,kenpom_rank,team_clean
+North Carolina,2009,1,,North Carolina
+Connecticut,2009,2,,Connecticut
+Pittsburgh,2009,3,,Pittsburgh
+Memphis,2009,4,,Memphis
+Louisville,2009,5,,Louisville
+Missouri,2009,6,,Missouri
+Oklahoma,2009,7,,Oklahoma
+Gonzaga,2009,8,,Gonzaga
+Michigan St.,2009,9,,Michigan St.
+Duke,2009,10,,Duke
+West Virginia,2009,11,,West Virginia
+UCLA,2009,12,,UCLA
+Villanova,2009,13,,Villanova
+Kansas,2009,14,,Kansas
+Arizona St.,2009,15,,Arizona St.
+Syracuse,2009,16,,Syracuse
+Washington,2009,17,,Washington
+Purdue,2009,18,,Purdue
+Marquette,2009,19,,Marquette
+Xavier,2009,20,,Xavier
+BYU,2009,21,,BYU
+Texas,2009,22,,Texas
+Clemson,2009,23,,Clemson
+Wake Forest,2009,24,,Wake Forest
+Illinois,2009,25,,Illinois
+Oklahoma St.,2009,26,,Oklahoma St.
+USC,2009,27,,USC
+Utah,2009,28,,Utah
+Wisconsin,2009,29,,Wisconsin
+California,2009,30,,California
+Georgetown,2009,31,,Georgetown
+Tennessee,2009,32,,Tennessee
+Baylor,2009,33,,Baylor
+Ohio St.,2009,34,,Ohio St.
+Florida,2009,35,,Florida
+San Diego St.,2009,36,,San Diego St.
+Arizona,2009,37,,Arizona
+Butler,2009,38,,Butler
+Florida St.,2009,39,,Florida St.
+Minnesota,2009,40,,Minnesota
+Notre Dame,2009,41,,Notre Dame
+Miami FL,2009,42,,Miami FL
+New Mexico,2009,43,,New Mexico
+Utah St.,2009,44,,Utah St.
+Texas A&M,2009,45,,Texas A&M
+LSU,2009,46,,LSU
+Michigan,2009,47,,Michigan
+Kentucky,2009,48,,Kentucky
+Washington St.,2009,49,,Washington St.
+Temple,2009,50,,Temple
+Kansas St.,2009,51,,Kansas St.
+Stanford,2009,52,,Stanford
+UAB,2009,53,,UAB
+VCU,2009,54,,VCU
+Maryland,2009,55,,Maryland
+Saint Mary's,2009,56,,Saint Mary's
+Penn St.,2009,57,,Penn St.
+Tulsa,2009,58,,Tulsa
+Auburn,2009,59,,Auburn
+Illinois St.,2009,60,,Illinois St.
+North Dakota St.,2009,61,,North Dakota St.
+Rhode Island,2009,62,,Rhode Island
+Nebraska,2009,63,,Nebraska
+Davidson,2009,64,,Davidson
+Northwestern,2009,65,,Northwestern
+Cleveland St.,2009,66,,Cleveland St.
+Siena,2009,67,,Siena
+Creighton,2009,68,,Creighton
+Mississippi St.,2009,69,,Mississippi St.
+Houston,2009,70,,Houston
+South Carolina,2009,71,,South Carolina
+Virginia Tech,2009,72,,Virginia Tech
+UNLV,2009,73,,UNLV
+Boston College,2009,74,,Boston College
+Niagara,2009,75,,Niagara
+Seton Hall,2009,76,,Seton Hall
+Providence,2009,77,,Providence
+Dayton,2009,78,,Dayton
+Green Bay,2009,79,,Green Bay
+Vanderbilt,2009,80,,Vanderbilt
+N.C. State,2009,81,,N.C. State
+UTEP,2009,82,,UTEP
+Northern Iowa,2009,83,,Northern Iowa
+Vermont,2009,84,,Vermont
+Duquesne,2009,85,,Duquesne
+Cincinnati,2009,86,,Cincinnati
+Iowa,2009,87,,Iowa
+Western Kentucky,2009,88,,Western Kentucky
+George Mason,2009,89,,George Mason
+Oral Roberts,2009,90,,Oral Roberts
+Miami OH,2009,91,,Miami OH
+Mississippi,2009,92,,Mississippi
+Old Dominion,2009,93,,Old Dominion
+Texas Tech,2009,94,,Texas Tech
+Akron,2009,95,,Akron
+Wright St.,2009,96,,Wright St.
+Northeastern,2009,97,,Northeastern
+Georgia Tech,2009,98,,Georgia Tech
+Saint Joseph's,2009,99,,Saint Joseph's
+Alabama,2009,100,,Alabama
+Stephen F. Austin,2009,101,,Stephen F. Austin
+Oakland,2009,102,,Oakland
+Nevada,2009,103,,Nevada
+Virginia,2009,104,,Virginia
+East Tennessee St.,2009,105,,East Tennessee St.
+La Salle,2009,106,,La Salle
+Cornell,2009,107,,Cornell
+Cal St. Northridge,2009,108,,Cal St. Northridge
+Portland,2009,109,,Portland
+Pacific,2009,110,,Pacific
+Oregon St.,2009,111,,Oregon St.
+American,2009,112,,American
+Iowa St.,2009,113,,Iowa St.
+Richmond,2009,114,,Richmond
+Belmont,2009,115,,Belmont
+Weber St.,2009,116,,Weber St.
+Tennessee Martin,2009,117,,Tennessee Martin
+Portland St.,2009,118,,Portland St.
+Buffalo,2009,119,,Buffalo
+Bradley,2009,120,,Bradley
+St. John's,2009,121,,St. John's
+Jacksonville,2009,122,,Jacksonville
+Sam Houston St.,2009,123,,Sam Houston St.
+Kent St.,2009,124,,Kent St.
+New Mexico St.,2009,125,,New Mexico St.
+TCU,2009,126,,TCU
+Arkansas,2009,127,,Arkansas
+Evansville,2009,128,,Evansville
+Illinois Chicago,2009,129,,Illinois Chicago
+Wyoming,2009,130,,Wyoming
+Murray St.,2009,131,,Murray St.
+Drexel,2009,132,,Drexel
+James Madison,2009,133,,James Madison
+Wichita St.,2009,134,,Wichita St.
+UCF,2009,135,,UCF
+South Florida,2009,136,,South Florida
+Santa Clara,2009,137,,Santa Clara
+Massachusetts,2009,138,,Massachusetts
+UT Arlington,2009,139,,UT Arlington
+Charlotte,2009,140,,Charlotte
+Drake,2009,141,,Drake
+Bowling Green,2009,142,,Bowling Green
+Saint Louis,2009,143,,Saint Louis
+Southern Miss,2009,144,,Southern Miss
+Mount St. Mary's,2009,145,,Mount St. Mary's
+Robert Morris,2009,146,,Robert Morris
+College of Charleston,2009,147,,College of Charleston
+Arkansas Little Rock,2009,148,,Arkansas Little Rock
+Rutgers,2009,149,,Rutgers
+Morgan St.,2009,150,,Morgan St.
+Boise St.,2009,151,,Boise St.
+North Texas,2009,152,,North Texas
+Milwaukee,2009,153,,Milwaukee
+Marshall,2009,154,,Marshall
+Eastern Kentucky,2009,155,,Eastern Kentucky
+Southern Illinois,2009,156,,Southern Illinois
+Morehead St.,2009,157,,Morehead St.
+Lipscomb,2009,158,,Lipscomb
+Oregon,2009,159,,Oregon
+Idaho,2009,160,,Idaho
+Texas A&M Corpus Chris,2009,161,,Texas A&M Corpus Chris
+San Diego,2009,162,,San Diego
+Louisiana Tech,2009,163,,Louisiana Tech
+Middle Tennessee,2009,164,,Middle Tennessee
+UC Santa Barbara,2009,165,,UC Santa Barbara
+VMI,2009,166,,VMI
+Nicholls St.,2009,167,,Nicholls St.
+Long Beach St.,2009,168,,Long Beach St.
+Hofstra,2009,169,,Hofstra
+Ohio,2009,170,,Ohio
+Boston University,2009,171,,Boston University
+Montana,2009,172,,Montana
+Fairfield,2009,173,,Fairfield
+Tulane,2009,174,,Tulane
+IUPUI,2009,175,,IUPUI
+Radford,2009,176,,Radford
+Binghamton,2009,177,,Binghamton
+Colorado,2009,178,,Colorado
+Rider,2009,179,,Rider
+South Alabama,2009,180,,South Alabama
+Colorado St.,2009,181,,Colorado St.
+Holy Cross,2009,182,,Holy Cross
+Troy,2009,183,,Troy
+Austin Peay,2009,184,,Austin Peay
+Utah Valley,2009,185,,Utah Valley
+Sacred Heart,2009,186,,Sacred Heart
+George Washington,2009,187,,George Washington
+St. Bonaventure,2009,188,,St. Bonaventure
+UTSA,2009,189,,UTSA
+Stony Brook,2009,190,,Stony Brook
+Manhattan,2009,191,,Manhattan
+San Jose St.,2009,192,,San Jose St.
+Idaho St.,2009,193,,Idaho St.
+The Citadel,2009,194,,The Citadel
+Iona,2009,195,,Iona
+Liberty,2009,196,,Liberty
+Missouri St.,2009,197,,Missouri St.
+Georgia,2009,198,,Georgia
+Southeastern Louisiana,2009,199,,Southeastern Louisiana
+Alabama St.,2009,200,,Alabama St.
+Cal St. Fullerton,2009,201,,Cal St. Fullerton
+Northern Colorado,2009,202,,Northern Colorado
+Indiana St.,2009,203,,Indiana St.
+Denver,2009,204,,Denver
+SMU,2009,205,,SMU
+DePaul,2009,206,,DePaul
+Fresno St.,2009,207,,Fresno St.
+Texas St.,2009,208,,Texas St.
+Indiana,2009,209,,Indiana
+Lamar,2009,210,,Lamar
+Delaware,2009,211,,Delaware
+South Dakota St.,2009,212,,South Dakota St.
+Chattanooga,2009,213,,Chattanooga
+Hawaii,2009,214,,Hawaii
+East Carolina,2009,215,,East Carolina
+IPFW,2009,216,,IPFW
+UC Irvine,2009,217,,UC Irvine
+Mercer,2009,218,,Mercer
+UC Riverside,2009,219,,UC Riverside
+UC Davis,2009,220,,UC Davis
+Loyola MD,2009,221,,Loyola MD
+Wofford,2009,222,,Wofford
+Youngstown St.,2009,223,,Youngstown St.
+Navy,2009,224,,Navy
+Arkansas St.,2009,225,,Arkansas St.
+Valparaiso,2009,226,,Valparaiso
+Southern Utah,2009,227,,Southern Utah
+Georgia St.,2009,228,,Georgia St.
+Loyola Chicago,2009,229,,Loyola Chicago
+Air Force,2009,230,,Air Force
+McNeese St.,2009,231,,McNeese St.
+Gardner Webb,2009,232,,Gardner Webb
+Chicago St.,2009,233,,Chicago St.
+William & Mary,2009,234,,William & Mary
+Rice,2009,235,,Rice
+Montana St.,2009,236,,Montana St.
+Canisius,2009,237,,Canisius
+Tennessee Tech,2009,238,,Tennessee Tech
+Northern Arizona,2009,239,,Northern Arizona
+Ball St.,2009,240,,Ball St.
+Western Carolina,2009,241,,Western Carolina
+Campbell,2009,242,,Campbell
+LIU Brooklyn,2009,243,,LIU Brooklyn
+San Francisco,2009,244,,San Francisco
+Yale,2009,245,,Yale
+Albany,2009,246,,Albany
+Jackson St.,2009,247,,Jackson St.
+Western Michigan,2009,248,,Western Michigan
+Centenary,2009,249,,Centenary
+Samford,2009,250,,Samford
+Marist,2009,251,,Marist
+Central Michigan,2009,252,,Central Michigan
+Eastern Washington,2009,253,,Eastern Washington
+Harvard,2009,254,,Harvard
+Presbyterian,2009,255,,Presbyterian
+Jacksonville St.,2009,256,,Jacksonville St.
+Stetson,2009,257,,Stetson
+Towson,2009,258,,Towson
+Louisiana Lafayette,2009,259,,Louisiana Lafayette
+Appalachian St.,2009,260,,Appalachian St.
+New Hampshire,2009,261,,New Hampshire
+UMBC,2009,262,,UMBC
+UNC Asheville,2009,263,,UNC Asheville
+Princeton,2009,264,,Princeton
+Lehigh,2009,265,,Lehigh
+FIU,2009,266,,FIU
+Coppin St.,2009,267,,Coppin St.
+Eastern Illinois,2009,268,,Eastern Illinois
+Cal Poly,2009,269,,Cal Poly
+Detroit,2009,270,,Detroit
+Saint Peter's,2009,271,,Saint Peter's
+Cal St. Bakersfield,2009,272,,Cal St. Bakersfield
+Penn,2009,273,,Penn
+Tennessee St.,2009,274,,Tennessee St.
+Hampton,2009,275,,Hampton
+South Carolina St.,2009,276,,South Carolina St.
+Wagner,2009,277,,Wagner
+Winthrop,2009,278,,Winthrop
+Quinnipiac,2009,279,,Quinnipiac
+Columbia,2009,280,,Columbia
+UMKC,2009,281,,UMKC
+New Orleans,2009,282,,New Orleans
+USC Upstate,2009,283,,USC Upstate
+Coastal Carolina,2009,284,,Coastal Carolina
+Florida Atlantic,2009,285,,Florida Atlantic
+Prairie View A&M,2009,286,,Prairie View A&M
+Bethune Cookman,2009,287,,Bethune Cookman
+Central Connecticut,2009,288,,Central Connecticut
+Northern Illinois,2009,289,,Northern Illinois
+Army,2009,290,,Army
+Elon,2009,291,,Elon
+Louisiana Monroe,2009,292,,Louisiana Monroe
+Bucknell,2009,293,,Bucknell
+Pepperdine,2009,294,,Pepperdine
+Florida Gulf Coast,2009,295,,Florida Gulf Coast
+Maine,2009,296,,Maine
+Western Illinois,2009,297,,Western Illinois
+Toledo,2009,298,,Toledo
+North Carolina A&T,2009,299,,North Carolina A&T
+SIU Edwardsville,2009,300,,SIU Edwardsville
+St. Francis NY,2009,301,,St. Francis NY
+Arkansas Pine Bluff,2009,302,,Arkansas Pine Bluff
+Brown,2009,303,,Brown
+Norfolk St.,2009,304,,Norfolk St.
+UNC Wilmington,2009,305,,UNC Wilmington
+High Point,2009,306,,High Point
+Georgia Southern,2009,307,,Georgia Southern
+Eastern Michigan,2009,308,,Eastern Michigan
+Colgate,2009,309,,Colgate
+Charleston Southern,2009,310,,Charleston Southern
+Longwood,2009,311,,Longwood
+Savannah St.,2009,312,,Savannah St.
+Hartford,2009,313,,Hartford
+Dartmouth,2009,314,,Dartmouth
+Northwestern St.,2009,315,,Northwestern St.
+Delaware St.,2009,316,,Delaware St.
+Lafayette,2009,317,,Lafayette
+Central Arkansas,2009,318,,Central Arkansas
+Houston Baptist,2009,319,,Houston Baptist
+Texas Southern,2009,320,,Texas Southern
+Fordham,2009,321,,Fordham
+Texas Pan American,2009,322,,Texas Pan American
+Loyola Marymount,2009,323,,Loyola Marymount
+UNC Greensboro,2009,324,,UNC Greensboro
+Mississippi Valley St.,2009,325,,Mississippi Valley St.
+Monmouth,2009,326,,Monmouth
+Furman,2009,327,,Furman
+St. Francis PA,2009,328,,St. Francis PA
+Howard,2009,329,,Howard
+Florida A&M,2009,330,,Florida A&M
+Southern,2009,331,,Southern
+North Florida,2009,332,,North Florida
+Bryant,2009,333,,Bryant
+Alabama A&M,2009,334,,Alabama A&M
+Fairleigh Dickinson,2009,335,,Fairleigh Dickinson
+Southeast Missouri St.,2009,336,,Southeast Missouri St.
+Kennesaw St.,2009,337,,Kennesaw St.
+Winston Salem St.,2009,338,,Winston Salem St.
+Sacramento St.,2009,339,,Sacramento St.
+Alcorn St.,2009,340,,Alcorn St.
+Grambling St.,2009,341,,Grambling St.
+Maryland Eastern Shore,2009,342,,Maryland Eastern Shore
+North Carolina Central,2009,343,,North Carolina Central
+NJIT,2009,344,,NJIT
+Virginia,2022,1,,Virginia
+Gonzaga,2022,2,,Gonzaga
+Michigan St.,2022,3,,Michigan St.
+Duke,2022,4,,Duke
+Texas Tech,2022,5,,Texas Tech
+Michigan,2022,6,,Michigan
+North Carolina,2022,7,,North Carolina
+Kentucky,2022,8,,Kentucky
+Purdue,2022,9,,Purdue
+Tennessee,2022,10,,Tennessee
+Auburn,2022,11,,Auburn
+Houston,2022,12,,Houston
+Virginia Tech,2022,13,,Virginia Tech
+Florida St.,2022,14,,Florida St.
+Iowa St.,2022,15,,Iowa St.
+Wisconsin,2022,16,,Wisconsin
+Kansas,2022,17,,Kansas
+Wofford,2022,18,,Wofford
+LSU,2022,19,,LSU
+Kansas St.,2022,20,,Kansas St.
+Mississippi St.,2022,21,,Mississippi St.
+Buffalo,2022,22,,Buffalo
+Louisville,2022,23,,Louisville
+Maryland,2022,24,,Maryland
+Texas,2022,25,,Texas
+Florida,2022,26,,Florida
+Nevada,2022,27,,Nevada
+Oregon,2022,28,,Oregon
+Cincinnati,2022,29,,Cincinnati
+Villanova,2022,30,,Villanova
+Saint Mary's,2022,31,,Saint Mary's
+Oklahoma,2022,32,,Oklahoma
+Marquette,2022,33,,Marquette
+UCF,2022,34,,UCF
+Baylor,2022,35,,Baylor
+Clemson,2022,36,,Clemson
+Iowa,2022,37,,Iowa
+Utah St.,2022,38,,Utah St.
+Syracuse,2022,39,,Syracuse
+TCU,2022,40,,TCU
+N.C. State,2022,41,,N.C. State
+VCU,2022,42,,VCU
+Penn St.,2022,43,,Penn St.
+Ohio St.,2022,44,,Ohio St.
+Lipscomb,2022,45,,Lipscomb
+Minnesota,2022,46,,Minnesota
+Nebraska,2022,47,,Nebraska
+Washington,2022,48,,Washington
+Belmont,2022,49,,Belmont
+Mississippi,2022,50,,Mississippi
+Murray St.,2022,51,,Murray St.
+Indiana,2022,52,,Indiana
+New Mexico St.,2022,53,,New Mexico St.
+Arkansas,2022,54,,Arkansas
+Creighton,2022,55,,Creighton
+Memphis,2022,56,,Memphis
+Arizona St.,2022,57,,Arizona St.
+Liberty,2022,58,,Liberty
+Furman,2022,59,,Furman
+Seton Hall,2022,60,,Seton Hall
+Toledo,2022,61,,Toledo
+Dayton,2022,62,,Dayton
+Colorado,2022,63,,Colorado
+Alabama,2022,64,,Alabama
+Xavier,2022,65,,Xavier
+Wichita St.,2022,66,,Wichita St.
+San Francisco,2022,67,,San Francisco
+Missouri,2022,68,,Missouri
+Temple,2022,69,,Temple
+South Carolina,2022,70,,South Carolina
+Fresno St.,2022,71,,Fresno St.
+Butler,2022,72,,Butler
+UC Irvine,2022,73,,UC Irvine
+Northwestern,2022,74,,Northwestern
+Miami FL,2022,75,,Miami FL
+Vermont,2022,76,,Vermont
+Yale,2022,77,,Yale
+Rutgers,2022,78,,Rutgers
+Providence,2022,79,,Providence
+East Tennessee St.,2022,80,,East Tennessee St.
+Oregon St.,2022,81,,Oregon St.
+USC,2022,82,,USC
+Oklahoma St.,2022,83,,Oklahoma St.
+Illinois,2022,84,,Illinois
+Davidson,2022,85,,Davidson
+BYU,2022,86,,BYU
+UNC Greensboro,2022,87,,UNC Greensboro
+St. John's,2022,88,,St. John's
+Northeastern,2022,89,,Northeastern
+San Diego,2022,90,,San Diego
+Texas A&M,2022,91,,Texas A&M
+South Dakota St.,2022,92,,South Dakota St.
+Hofstra,2022,93,,Hofstra
+Arizona,2022,94,,Arizona
+West Virginia,2022,95,,West Virginia
+Northern Kentucky,2022,96,,Northern Kentucky
+Notre Dame,2022,97,,Notre Dame
+Connecticut,2022,98,,Connecticut
+South Florida,2022,99,,South Florida
+Georgetown,2022,100,,Georgetown
+Pittsburgh,2022,101,,Pittsburgh
+UCLA,2022,102,,UCLA
+Georgia Southern,2022,103,,Georgia Southern
+Utah Valley,2022,104,,Utah Valley
+Bowling Green,2022,105,,Bowling Green
+Saint Louis,2022,106,,Saint Louis
+SMU,2022,107,,SMU
+Akron,2022,108,,Akron
+Utah,2022,109,,Utah
+Jacksonville St.,2022,110,,Jacksonville St.
+Grand Canyon,2022,111,,Grand Canyon
+Stanford,2022,112,,Stanford
+Old Dominion,2022,113,,Old Dominion
+Harvard,2022,114,,Harvard
+Georgia Tech,2022,115,,Georgia Tech
+Western Kentucky,2022,116,,Western Kentucky
+Wright St.,2022,117,,Wright St.
+DePaul,2022,118,,DePaul
+Tulsa,2022,119,,Tulsa
+Southern Miss,2022,120,,Southern Miss
+St. Bonaventure,2022,121,,St. Bonaventure
+Radford,2022,122,,Radford
+Charleston,2022,123,,Charleston
+Georgia St.,2022,124,,Georgia St.
+San Diego St.,2022,125,,San Diego St.
+Colgate,2022,126,,Colgate
+Boston College,2022,127,,Boston College
+Austin Peay,2022,128,,Austin Peay
+Central Michigan,2022,129,,Central Michigan
+Penn,2022,130,,Penn
+Loyola Chicago,2022,131,,Loyola Chicago
+Georgia,2022,132,,Georgia
+Ball St.,2022,133,,Ball St.
+Loyola Marymount,2022,134,,Loyola Marymount
+Drake,2022,135,,Drake
+Northern Illinois,2022,136,,Northern Illinois
+Montana,2022,137,,Montana
+Texas St.,2022,138,,Texas St.
+Boise St.,2022,139,,Boise St.
+Louisiana Monroe,2022,140,,Louisiana Monroe
+Louisiana Tech,2022,141,,Louisiana Tech
+Rhode Island,2022,142,,Rhode Island
+Kent St.,2022,143,,Kent St.
+Samford,2022,144,,Samford
+Bucknell,2022,145,,Bucknell
+Southern Illinois,2022,146,,Southern Illinois
+UAB,2022,147,,UAB
+Miami OH,2022,148,,Miami OH
+UTSA,2022,149,,UTSA
+UT Arlington,2022,150,,UT Arlington
+Pepperdine,2022,151,,Pepperdine
+Abilene Christian,2022,152,,Abilene Christian
+Brown,2022,153,,Brown
+Coastal Carolina,2022,154,,Coastal Carolina
+Vanderbilt,2022,155,,Vanderbilt
+George Mason,2022,156,,George Mason
+Marshall,2022,157,,Marshall
+North Texas,2022,158,,North Texas
+Eastern Michigan,2022,159,,Eastern Michigan
+Charleston Southern,2022,160,,Charleston Southern
+Bradley,2022,161,,Bradley
+Florida Atlantic,2022,162,,Florida Atlantic
+Gardner Webb,2022,163,,Gardner Webb
+Nebraska Omaha,2022,164,,Nebraska Omaha
+UNLV,2022,165,,UNLV
+Stony Brook,2022,166,,Stony Brook
+North Florida,2022,167,,North Florida
+Winthrop,2022,168,,Winthrop
+Lehigh,2022,169,,Lehigh
+Hampton,2022,170,,Hampton
+Missouri St.,2022,171,,Missouri St.
+UC Santa Barbara,2022,172,,UC Santa Barbara
+Duquesne,2022,173,,Duquesne
+Wake Forest,2022,174,,Wake Forest
+Princeton,2022,175,,Princeton
+Sam Houston St.,2022,176,,Sam Houston St.
+Northern Iowa,2022,177,,Northern Iowa
+Louisiana,2022,178,,Louisiana
+Presbyterian,2022,179,,Presbyterian
+Colorado St.,2022,180,,Colorado St.
+Campbell,2022,181,,Campbell
+UT Rio Grande Valley,2022,182,,UT Rio Grande Valley
+NJIT,2022,183,,NJIT
+Ohio,2022,184,,Ohio
+Green Bay,2022,185,,Green Bay
+Santa Clara,2022,186,,Santa Clara
+Oakland,2022,187,,Oakland
+New Mexico,2022,188,,New Mexico
+Saint Joseph's,2022,189,,Saint Joseph's
+Seattle,2022,190,,Seattle
+IUPUI,2022,191,,IUPUI
+Purdue Fort Wayne,2022,192,,Purdue Fort Wayne
+Northern Colorado,2022,193,,Northern Colorado
+Hartford,2022,194,,Hartford
+Texas Southern,2022,195,,Texas Southern
+Illinois Chicago,2022,196,,Illinois Chicago
+Cal Baptist,2022,197,,Cal Baptist
+Iona,2022,198,,Iona
+Mercer,2022,199,,Mercer
+American,2022,200,,American
+Hawaii,2022,201,,Hawaii
+North Dakota St.,2022,202,,North Dakota St.
+Richmond,2022,203,,Richmond
+FIU,2022,204,,FIU
+Illinois St.,2022,205,,Illinois St.
+Appalachian St.,2022,206,,Appalachian St.
+Washington St.,2022,207,,Washington St.
+Indiana St.,2022,208,,Indiana St.
+Prairie View A&M,2022,209,,Prairie View A&M
+Cal St. Fullerton,2022,210,,Cal St. Fullerton
+Fairleigh Dickinson,2022,211,,Fairleigh Dickinson
+Rider,2022,212,,Rider
+Florida Gulf Coast,2022,213,,Florida Gulf Coast
+South Alabama,2022,214,,South Alabama
+Columbia,2022,215,,Columbia
+Pacific,2022,216,,Pacific
+Lamar,2022,217,,Lamar
+Dartmouth,2022,218,,Dartmouth
+William & Mary,2022,219,,William & Mary
+Valparaiso,2022,220,,Valparaiso
+Cornell,2022,221,,Cornell
+Little Rock,2022,222,,Little Rock
+High Point,2022,223,,High Point
+Weber St.,2022,224,,Weber St.
+Long Beach St.,2022,225,,Long Beach St.
+Cal St. Bakersfield,2022,226,,Cal St. Bakersfield
+Evansville,2022,227,,Evansville
+La Salle,2022,228,,La Salle
+South Dakota,2022,229,,South Dakota
+UMBC,2022,230,,UMBC
+Boston University,2022,231,,Boston University
+Southeastern Louisiana,2022,232,,Southeastern Louisiana
+Detroit,2022,233,,Detroit
+Quinnipiac,2022,234,,Quinnipiac
+Eastern Kentucky,2022,235,,Eastern Kentucky
+Massachusetts,2022,236,,Massachusetts
+Eastern Washington,2022,237,,Eastern Washington
+UMKC,2022,238,,UMKC
+Holy Cross,2022,239,,Holy Cross
+Sacred Heart,2022,240,,Sacred Heart
+California,2022,241,,California
+Army,2022,242,,Army
+Air Force,2022,243,,Air Force
+Norfolk St.,2022,244,,Norfolk St.
+Morehead St.,2022,245,,Morehead St.
+Middle Tennessee,2022,246,,Middle Tennessee
+Jacksonville,2022,247,,Jacksonville
+Rice,2022,248,,Rice
+Troy,2022,249,,Troy
+Montana St.,2022,250,,Montana St.
+Drexel,2022,251,,Drexel
+UC Davis,2022,252,,UC Davis
+Cal St. Northridge,2022,253,,Cal St. Northridge
+Arkansas St.,2022,254,,Arkansas St.
+Western Michigan,2022,255,,Western Michigan
+Longwood,2022,256,,Longwood
+The Citadel,2022,257,,The Citadel
+UMass Lowell,2022,258,,UMass Lowell
+Youngstown St.,2022,259,,Youngstown St.
+Fordham,2022,260,,Fordham
+St. Francis PA,2022,261,,St. Francis PA
+New Orleans,2022,262,,New Orleans
+LIU Brooklyn,2022,263,,LIU Brooklyn
+East Carolina,2022,264,,East Carolina
+Delaware,2022,265,,Delaware
+Chattanooga,2022,266,,Chattanooga
+Siena,2022,267,,Siena
+Grambling St.,2022,268,,Grambling St.
+Robert Morris,2022,269,,Robert Morris
+Loyola MD,2022,270,,Loyola MD
+North Dakota,2022,271,,North Dakota
+UNC Wilmington,2022,272,,UNC Wilmington
+Southern Utah,2022,273,,Southern Utah
+Sacramento St.,2022,274,,Sacramento St.
+St. Francis NY,2022,275,,St. Francis NY
+Marist,2022,276,,Marist
+Western Carolina,2022,277,,Western Carolina
+Cleveland St.,2022,278,,Cleveland St.
+Albany,2022,279,,Albany
+Navy,2022,280,,Navy
+Houston Baptist,2022,281,,Houston Baptist
+Canisius,2022,282,,Canisius
+Tulane,2022,283,,Tulane
+North Alabama,2022,284,,North Alabama
+James Madison,2022,285,,James Madison
+Portland St.,2022,286,,Portland St.
+Texas A&M Corpus Chris,2022,287,,Texas A&M Corpus Chris
+VMI,2022,288,,VMI
+Tennessee Martin,2022,289,,Tennessee Martin
+Oral Roberts,2022,290,,Oral Roberts
+Towson,2022,291,,Towson
+Tennessee St.,2022,292,,Tennessee St.
+George Washington,2022,293,,George Washington
+Western Illinois,2022,294,,Western Illinois
+Monmouth,2022,295,,Monmouth
+Milwaukee,2022,296,,Milwaukee
+Charlotte,2022,297,,Charlotte
+Lafayette,2022,298,,Lafayette
+UTEP,2022,299,,UTEP
+North Carolina A&T,2022,300,,North Carolina A&T
+Fairfield,2022,301,,Fairfield
+Central Arkansas,2022,302,,Central Arkansas
+North Carolina Central,2022,303,,North Carolina Central
+Northern Arizona,2022,304,,Northern Arizona
+Howard,2022,305,,Howard
+Bethune Cookman,2022,306,,Bethune Cookman
+Eastern Illinois,2022,307,,Eastern Illinois
+Southeast Missouri St.,2022,308,,Southeast Missouri St.
+Elon,2022,309,,Elon
+Nicholls St.,2022,310,,Nicholls St.
+Stephen F. Austin,2022,311,,Stephen F. Austin
+Denver,2022,312,,Denver
+Arkansas Pine Bluff,2022,313,,Arkansas Pine Bluff
+Wagner,2022,314,,Wagner
+Niagara,2022,315,,Niagara
+Saint Peter's,2022,316,,Saint Peter's
+Wyoming,2022,317,,Wyoming
+Florida A&M,2022,318,,Florida A&M
+Jackson St.,2022,319,,Jackson St.
+Tennessee Tech,2022,320,,Tennessee Tech
+Central Connecticut,2022,321,,Central Connecticut
+UC Riverside,2022,322,,UC Riverside
+Manhattan,2022,323,,Manhattan
+Mount St. Mary's,2022,324,,Mount St. Mary's
+Stetson,2022,325,,Stetson
+Portland,2022,326,,Portland
+Bryant,2022,327,,Bryant
+Alabama St.,2022,328,,Alabama St.
+Idaho St.,2022,329,,Idaho St.
+SIU Edwardsville,2022,330,,SIU Edwardsville
+McNeese St.,2022,331,,McNeese St.
+Binghamton,2022,332,,Binghamton
+Morgan St.,2022,333,,Morgan St.
+Cal Poly,2022,334,,Cal Poly
+Southern,2022,335,,Southern
+USC Upstate,2022,336,,USC Upstate
+South Carolina St.,2022,337,,South Carolina St.
+Maine,2022,338,,Maine
+Kennesaw St.,2022,339,,Kennesaw St.
+Savannah St.,2022,340,,Savannah St.
+Northwestern St.,2022,341,,Northwestern St.
+Coppin St.,2022,342,,Coppin St.
+San Jose St.,2022,343,,San Jose St.
+Alabama A&M,2022,344,,Alabama A&M
+New Hampshire,2022,345,,New Hampshire
+Incarnate Word,2022,346,,Incarnate Word
+UNC Asheville,2022,347,,UNC Asheville
+Idaho,2022,348,,Idaho
+Alcorn St.,2022,349,,Alcorn St.
+Mississippi Valley St.,2022,350,,Mississippi Valley St.
+Chicago St.,2022,351,,Chicago St.
+Delaware St.,2022,352,,Delaware St.
+Maryland Eastern Shore,2022,353,,Maryland Eastern Shore

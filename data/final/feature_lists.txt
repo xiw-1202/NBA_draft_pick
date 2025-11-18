@@ -1,0 +1,106 @@
+NBA DRAFT PREDICTION - FEATURE LISTS
+==================================================
+
+IDENTIFIER COLUMNS:
+  Player
+  Season
+  Team
+  Conference
+  NBA_Team
+  Draft_Year
+  player_name_clean
+
+TARGET COLUMNS (8):
+  drafted
+  draft_position
+  lottery_pick
+  first_round
+  second_round
+  draft_tier
+  top_10_pick
+  late_first_round
+
+FEATURE COLUMNS (75):
+  GP
+  Min_per
+  Ortg
+  usg
+  eFG
+  TS_per
+  ORB_per
+  DRB_per
+  AST_per
+  TO_per
+  FTM
+  FTA
+  FT_per
+  twoPM
+  twoPA
+  twoP_per
+  TPM
+  TPA
+  TP_per
+  blk_per
+  stl_per
+  ftr
+  ClassYear
+  Height
+  num
+  porpag
+  adjoe
+  pfr
+  pid
+  type
+  Rec Rank
+  ast/tov
+  rimmade
+  rimmade+rimmiss
+  midmade
+  midmade+midmiss
+  rimmade/(rimmade+rimmiss)
+  midmade/(midmade+midmiss)
+  dunksmade
+  dunksmiss+dunksmade
+  dunksmade/(dunksmade+dunksmiss)
+  pick
+  drtg
+  adrtg
+  dporpag
+  stops
+  bpm
+  obpm
+  dbpm
+  gbpm
+  mp
+  ogbpm
+  dgbpm
+  oreb
+  dreb
+  treb
+  ast
+  stl
+  blk
+  pts
+  Draft_Pick
+  Drafted
+  ap_rank
+  kenpom_rank
+  has_ap_ranking
+  has_kenpom_ranking
+  top_25_team
+  total_poss
+  total_mp
+  raptor_offense_avg
+  raptor_defense_avg
+  first_nba_season
+  last_nba_season
+  nba_seasons
+  late_pick_diamond
+
+ANALYSIS COLUMNS (6):
+  has_nba_data
+  raptor_total_avg
+  war_total_career
+  is_diamond
+  undrafted_diamond
+  elite_nba_player

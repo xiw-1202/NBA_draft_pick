@@ -1,0 +1,9 @@
+TEAM RANKINGS MERGE REPORT
+==================================================
+
+Total records: 25,708
+Records with AP ranking: 1,622 (6.3%)
+Records with KenPom ranking: 0 (0.0%)
+Top 25 teams: 116 (0.5%)
+Direct team name matches: 339
+Unmatched team-year combinations: 4189

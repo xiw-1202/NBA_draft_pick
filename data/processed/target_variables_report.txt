@@ -1,0 +1,16 @@
+TARGET VARIABLES CREATION REPORT
+==================================================
+
+Total records: 25,708
+Drafted players: 565 (2.2%)
+Lottery picks: 145 (0.6%)
+First round picks: 296 (1.2%)
+Second round picks: 269 (1.0%)
+
+DRAFT TIER DISTRIBUTION:
+  Undrafted: 25,143 (97.8%)
+  Early_Second: 137 (0.5%)
+  Late_Second: 132 (0.5%)
+  Top_10: 101 (0.4%)
+  Lottery_Plus: 98 (0.4%)
+  First_Round: 97 (0.4%)

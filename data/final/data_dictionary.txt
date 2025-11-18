@@ -1,0 +1,38 @@
+NBA DRAFT PREDICTION DATASET - DATA DICTIONARY
+============================================================
+
+Dataset: merged_dataset_final.csv
+Records: 25,708
+Features: 96
+Generated: 2025-11-17 23:20:29
+
+Player                    | object       | Player name                                        | Missing:     0 ( 0.0%)
+Season                    | int64        | College season year                                | Missing:     0 ( 0.0%)
+Team                      | object       | College team name                                  | Missing:     0 ( 0.0%)
+Conference                | object       | College conference                                 | Missing:     0 ( 0.0%)
+GP                        | int64        | Games played                                       | Missing:     0 ( 0.0%)
+Min_per                   | float64      | Minutes per game                                   | Missing:     0 ( 0.0%)
+pts                       | float64      | Points per game                                    | Missing:     3 ( 0.0%)
+ast                       | float64      | Assists per game                                   | Missing:     3 ( 0.0%)
+treb                      | float64      | Total rebounds per game                            | Missing:     3 ( 0.0%)
+eFG                       | float64      | Effective field goal percentage                    | Missing:     0 ( 0.0%)
+TS_per                    | float64      | True shooting percentage                           | Missing:     0 ( 0.0%)
+usg                       | float64      | Usage rate                                         | Missing:     0 ( 0.0%)
+drafted                   | int64        | Binary indicator if player was drafted (0/1)       | Missing:     0 ( 0.0%)
+draft_position            | float64      | Draft position (1-60) for drafted players          | Missing: 25143 (97.8%)
+Draft_Year                | float64      | Year player was drafted                            | Missing: 25143 (97.8%)
+NBA_Team                  | object       | NBA team that drafted the player                   | Missing: 25143 (97.8%)
+lottery_pick              | int64        | Binary indicator for lottery pick (picks 1-14)     | Missing:     0 ( 0.0%)
+first_round               | int64        | Binary indicator for first round pick (picks 1-30) | Missing:     0 ( 0.0%)
+second_round              | int64        | Binary indicator for second round pick (picks 31-60) | Missing:     0 ( 0.0%)
+draft_tier                | object       | Categorical draft tier (Top_10, Lottery_Plus, First_Round, etc.) | Missing:     0 ( 0.0%)
+ap_rank                   | float64      | AP poll ranking (999 if unranked)                  | Missing:     0 ( 0.0%)
+kenpom_rank               | float64      | KenPom ranking (999 if unranked)                   | Missing:     0 ( 0.0%)
+has_ap_ranking            | int64        | Binary indicator if team was AP ranked             | Missing:     0 ( 0.0%)
+top_25_team               | int64        | Binary indicator if team was top 25 AP ranked      | Missing:     0 ( 0.0%)
+has_nba_data              | int64        | Binary indicator if player has NBA RAPTOR data     | Missing:     0 ( 0.0%)
+raptor_total_avg          | float64      | Career average total RAPTOR score                  | Missing: 25176 (97.9%)
+war_total_career          | float64      | Career total Wins Above Replacement                | Missing: 25176 (97.9%)
+is_diamond                | int64        | Binary indicator for diamond player (high NBA performance, late/undrafted) | Missing:     0 ( 0.0%)
+undrafted_diamond         | int64        | Binary indicator for undrafted diamond player      | Missing:     0 ( 0.0%)
+elite_nba_player          | int64        | Binary indicator for elite NBA performer (RAPTOR > 2.0) | Missing:     0 ( 0.0%)

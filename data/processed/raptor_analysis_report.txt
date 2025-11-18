@@ -1,0 +1,46 @@
+RAPTOR METRICS ANALYSIS REPORT
+==================================================
+
+Total college players: 25,708
+Players with NBA data: 532 (2.1%)
+Diamond players identified: 28
+Undrafted diamonds: 23
+Late pick diamonds: 5
+Elite NBA players: 41
+
+DIAMOND PLAYER CRITERIA:
+- High NBA performance: RAPTOR > 1.0
+- AND (Undrafted OR drafted after pick 40)
+
+IDENTIFIED DIAMOND PLAYERS:
+            Player  Season                   Team  drafted  draft_position  raptor_total_avg  war_total_career
+         Max Strus    2019                 DePaul        0             NaN            14.559             0.737
+     Alan Williams    2015       UC Santa Barbara        0             NaN             6.126             2.370
+   DeAndre Liggins    2011               Kentucky        1            53.0             5.775            -0.602
+ Anthony Davis Jr.    2019    Arkansas Pine Bluff        0             NaN             5.431            81.646
+        Tony Davis    2009                    UCF        0             NaN             5.431            81.646
+     Anthony Brown    2016              Green Bay        0             NaN             4.984            -0.060
+      John Konchar    2019             Fort Wayne        0             NaN             3.726             2.218
+       Danny Green    2009         North Carolina        1            46.0             3.506            60.018
+  Garrison Mathews    2019               Lipscomb        0             NaN             2.800             2.861
+  Robert Covington    2013          Tennessee St.        0             NaN             2.320            39.298
+     Fred VanVleet    2016            Wichita St.        0             NaN             2.239            23.601
+       David Nwaba    2016               Cal Poly        0             NaN             2.227             7.171
+       Alex Caruso    2016              Texas A&M        0             NaN             2.074            10.285
+    Michael Porter    2013 Southeast Missouri St.        0             NaN             1.997             8.918
+  Donovan Mitchell    2018            Wake Forest        0             NaN             1.993            25.350
+      Monte Morris    2017               Iowa St.        1            51.0             1.783             7.720
+     Nick Calathes    2009                Florida        1            45.0             1.704             4.791
+       Patty Mills    2009           Saint Mary's        1            55.0             1.680            31.182
+Shaquille Harrison    2016                  Tulsa        0             NaN             1.561             5.472
+   Nicolas Claxton    2019                Georgia        0             NaN             1.549             2.960
+     Luguentz Dort    2019            Arizona St.        0             NaN             1.474             5.655
+    MarShon Brooks    2009             Providence        0             NaN             1.457             1.398
+ Anthony Allen Jr.    2016           Oklahoma St.        0             NaN             1.304            18.676
+     Anthony Allen    2015           Oklahoma St.        0             NaN             1.304            18.676
+     Royce O'Neale    2015                 Baylor        0             NaN             1.240            16.906
+      Devin Harris    2018           Jacksonville        0             NaN             1.209            15.620
+    Ryan Broekhoff    2013             Valparaiso        0             NaN             1.068             1.085
+      Amir Johnson    2010                Radford        0             NaN             1.063            20.714
+
+Draft position vs NBA performance correlation: -0.164

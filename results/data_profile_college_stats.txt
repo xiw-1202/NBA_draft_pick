@@ -1,0 +1,297 @@
+=================================================================================
+DATA PROFILE REPORT: College Basketball Players 2009-2021
+=================================================================================
+
+1. BASIC INFORMATION
+----------------------------------------
+Number of rows: 61,061
+Number of columns: 66
+Memory usage: 52.22 MB
+
+2. COLUMN NAMES AND DATA TYPES
+----------------------------------------
+  player_name                    : object         
+  team                           : object         
+  conf                           : object         
+  GP                             : int64          
+  Min_per                        : float64        
+  Ortg                           : float64        
+  usg                            : float64        
+  eFG                            : float64        
+  TS_per                         : float64        
+  ORB_per                        : float64        
+  DRB_per                        : float64        
+  AST_per                        : float64        
+  TO_per                         : float64        
+  FTM                            : int64          
+  FTA                            : int64          
+  FT_per                         : float64        
+  twoPM                          : int64          
+  twoPA                          : int64          
+  twoP_per                       : float64        
+  TPM                            : int64          
+  TPA                            : int64          
+  TP_per                         : float64        
+  blk_per                        : float64        
+  stl_per                        : float64        
+  ftr                            : float64        
+  yr                             : object         
+  ht                             : object         
+  num                            : object         
+  porpag                         : float64        
+  adjoe                          : float64        
+  pfr                            : float64        
+  year                           : int64          
+  pid                            : int64          
+  type                           : object         
+  Rec Rank                       : float64        
+  ast/tov                        : float64        
+  rimmade                        : float64        
+  rimmade+rimmiss                : float64        
+  midmade                        : float64        
+  midmade+midmiss                : float64        
+  rimmade/(rimmade+rimmiss)      : float64        
+  midmade/(midmade+midmiss)      : float64        
+  dunksmade                      : float64        
+  dunksmiss+dunksmade            : float64        
+  dunksmade/(dunksmade+dunksmiss) : float64        
+  pick                           : float64        
+  drtg                           : float64        
+  adrtg                          : float64        
+  dporpag                        : float64        
+  stops                          : float64        
+  bpm                            : float64        
+  obpm                           : float64        
+  dbpm                           : float64        
+  gbpm                           : float64        
+  mp                             : float64        
+  ogbpm                          : float64        
+  dgbpm                          : float64        
+  oreb                           : float64        
+  dreb                           : float64        
+  treb                           : float64        
+  ast                            : float64        
+  stl                            : float64        
+  blk                            : float64        
+  pts                            : float64        
+  Unnamed: 64                    : object         
+  Unnamed: 65                    : float64        
+
+3. DATA TYPE SUMMARY
+----------------------------------------
+  float64         : 49 columns
+  int64           : 9 columns
+  object          : 8 columns
+
+4. MISSING VALUES
+----------------------------------------
+  pick                           :  59626 ( 97.6%)
+  Rec Rank                       :  42591 ( 69.8%)
+  dunksmade/(dunksmade+dunksmiss) :  33510 ( 54.9%)
+  midmade/(midmade+midmiss)      :  10385 ( 17.0%)
+  rimmade/(rimmade+rimmiss)      :  10110 ( 16.6%)
+  rimmade                        :   6329 ( 10.4%)
+  rimmade+rimmiss                :   6329 ( 10.4%)
+  midmade                        :   6329 ( 10.4%)
+  midmade+midmiss                :   6329 ( 10.4%)
+  dunksmade                      :   6329 ( 10.4%)
+  dunksmiss+dunksmade            :   6329 ( 10.4%)
+  num                            :   4786 (  7.8%)
+  ast/tov                        :   4727 (  7.7%)
+  Unnamed: 64                    :   4684 (  7.7%)
+  yr                             :    294 (  0.5%)
+  ht                             :    111 (  0.2%)
+  dbpm                           :     45 (  0.1%)
+  dgbpm                          :     45 (  0.1%)
+  ogbpm                          :     45 (  0.1%)
+  gbpm                           :     45 (  0.1%)
+  dporpag                        :     45 (  0.1%)
+  obpm                           :     45 (  0.1%)
+  bpm                            :     45 (  0.1%)
+  stops                          :     45 (  0.1%)
+  adrtg                          :     45 (  0.1%)
+  drtg                           :     45 (  0.1%)
+  Unnamed: 65                    :     45 (  0.1%)
+  mp                             :     38 (  0.1%)
+  oreb                           :     38 (  0.1%)
+  dreb                           :     38 (  0.1%)
+  treb                           :     38 (  0.1%)
+  ast                            :     38 (  0.1%)
+  stl                            :     38 (  0.1%)
+  blk                            :     38 (  0.1%)
+  pts                            :     38 (  0.1%)
+
+5. NUMERIC COLUMN STATISTICS (Top 10 by variance)
+----------------------------------------
+
+  pid:
+    Mean     :   33574.48
+    Std Dev  :   20404.71
+    Min      :       2.00
+    25%      :   17054.00
+    Median   :   32404.00
+    75%      :   47422.00
+    Max      :   74254.00
+
+  twoPA:
+    Mean     :      83.05
+    Std Dev  :      83.83
+    Min      :       0.00
+    25%      :      12.00
+    Median   :      57.00
+    75%      :     131.00
+    Max      :     678.00
+
+  stops:
+    Mean     :      80.83
+    Std Dev  :      64.62
+    Min      :       0.04
+    25%      :      18.66
+    Median   :      73.67
+    75%      :     131.90
+    Max      :     360.57
+
+  TPA:
+    Mean     :      44.69
+    Std Dev  :      57.04
+    Min      :       0.00
+    25%      :       1.00
+    Median   :      18.00
+    75%      :      73.00
+    Max      :     394.00
+
+  FTA:
+    Mean     :      45.66
+    Std Dev  :      48.63
+    Min      :       0.00
+    25%      :       6.00
+    Median   :      30.00
+    75%      :      70.00
+    Max      :     374.00
+
+  rimmade+rimmiss:
+    Mean     :      45.93
+    Std Dev  :      46.83
+    Min      :       0.00
+    25%      :       8.00
+    Median   :      32.00
+    75%      :      71.00
+    Max      :     358.00
+
+  midmade+midmiss:
+    Mean     :      39.30
+    Std Dev  :      43.61
+    Min      :       0.00
+    25%      :       6.00
+    Median   :      24.00
+    75%      :      59.00
+    Max      :     532.00
+
+  twoPM:
+    Mean     :      40.37
+    Std Dev  :      43.06
+    Min      :       0.00
+    25%      :       5.00
+    Median   :      26.00
+    75%      :      63.00
+    Max      :     333.00
+
+  ftr:
+    Mean     :      37.02
+    Std Dev  :      36.66
+    Min      :       0.00
+    25%      :      19.00
+    Median   :      32.30
+    75%      :      47.30
+    Max      :    1000.00
+
+  FTM:
+    Mean     :      31.91
+    Std Dev  :      36.16
+    Min      :       0.00
+    25%      :       4.00
+    Median   :      19.00
+    75%      :      48.00
+    Max      :     312.00
+
+6. CATEGORICAL COLUMN STATISTICS
+----------------------------------------
+
+  player_name:
+    Unique values: 25719
+      Austin Williams      :     15 (  0.0%)
+      Terrell Brown        :     15 (  0.0%)
+      Anthony Johnson      :     15 (  0.0%)
+      Justin Robinson      :     15 (  0.0%)
+      David Brown          :     15 (  0.0%)
+      ... (25714 more values)
+
+  team:
+    Unique values: 362
+      Army                 :    226 (  0.4%)
+      Air Force            :    218 (  0.4%)
+      Arkansas Pine Bluff  :    215 (  0.4%)
+      Navy                 :    213 (  0.3%)
+      Jackson St.          :    211 (  0.3%)
+      ... (357 more values)
+
+  conf:
+    Unique values: 36
+      ACC                  :   2527 (  4.1%)
+      A10                  :   2468 (  4.0%)
+      SEC                  :   2408 (  3.9%)
+      B10                  :   2333 (  3.8%)
+      CUSA                 :   2304 (  3.8%)
+      ... (31 more values)
+
+  yr:
+    Unique values: 7
+      Jr                   :  16241 ( 26.6%)
+      Fr                   :  16233 ( 26.6%)
+      So                   :  14485 ( 23.7%)
+      Sr                   :  13801 ( 22.6%)
+      0                    :      5 (  0.0%)
+      57.1                 :      1 (  0.0%)
+      42.9                 :      1 (  0.0%)
+
+  ht:
+    Unique values: 38
+      7-Jun                :   6082 ( 10.0%)
+      8-Jun                :   5961 (  9.8%)
+      5-Jun                :   5886 (  9.6%)
+      4-Jun                :   5849 (  9.6%)
+      6-Jun                :   5607 (  9.2%)
+      ... (33 more values)
+
+  num:
+    Unique values: 43
+      1                    :   3257 (  5.3%)
+      5                    :   3118 (  5.1%)
+      3                    :   3066 (  5.0%)
+      2                    :   3030 (  5.0%)
+      11                   :   2783 (  4.6%)
+      ... (38 more values)
+
+  type:
+    Unique values: 1
+      all                  :  61061 (100.0%)
+
+  Unnamed: 64:
+    Unique values: 8
+      Wing G               :  12455 ( 20.4%)
+      PF/C                 :  10220 ( 16.7%)
+      Combo G              :   8966 ( 14.7%)
+      C                    :   8121 ( 13.3%)
+      Scoring PG           :   5837 (  9.6%)
+      Wing F               :   4923 (  8.1%)
+      Stretch 4            :   3191 (  5.2%)
+      Pure PG              :   2664 (  4.4%)
+
+7. SAMPLE DATA (First 5 rows)
+----------------------------------------
+       player_name           team conf  GP  Min_per   Ortg   usg   eFG  TS_per  ORB_per  DRB_per  AST_per  TO_per  FTM  FTA  FT_per  twoPM  twoPA  twoP_per  TPM  TPA  TP_per  blk_per  stl_per   ftr  yr     ht  num    porpag     adjoe  pfr  year  pid type  Rec Rank   ast/tov  rimmade  rimmade+rimmiss  midmade  midmade+midmiss  rimmade/(rimmade+rimmiss)  midmade/(midmade+midmiss)  dunksmade  dunksmiss+dunksmade  dunksmade/(dunksmade+dunksmiss)  pick     drtg    adrtg   dporpag     stops       bpm      obpm      dbpm      gbpm       mp     ogbpm     dgbpm    oreb    dreb    treb     ast     stl     blk      pts Unnamed: 64  Unnamed: 65
+0    DeAndrae Ross  South Alabama   SB  26     29.5   97.3  16.6  42.5   44.43      1.6      4.6     15.8    16.3   10   14   0.714     26     68     0.382   13   39   0.333      0.3      1.5  13.1  So  2-Jun  NaN  0.258086   89.3938  2.5  2009    2  all       NaN  1.823646      NaN              NaN      NaN              NaN                        NaN                        NaN        NaN                  NaN                              NaN   NaN  108.321  108.527  0.893017   49.9644 -4.995140 -1.623360 -3.371780 -4.723150  14.5769 -2.781990 -1.941150  0.1923  0.6154  0.8077  1.1923  0.3462  0.0385   3.8846         NaN      6.22026
+1    Pooh Williams       Utah St.  WAC  34     60.9  108.3  14.9  52.4   54.48      3.8      6.3     13.6    19.8   30   45   0.667     56    113     0.496   20   51   0.392      1.0      1.1  27.4  So  4-Jun  NaN  1.334920  100.0660  3.4  2009    3  all       NaN  1.631621      NaN              NaN      NaN              NaN                        NaN                        NaN        NaN                  NaN                              NaN   NaN  105.078  104.017  1.880030  111.9290  0.593024  1.385490 -0.792469 -0.300196  24.5294 -0.052263 -0.247934  0.6765  1.2647  1.9412  1.8235  0.4118  0.2353   5.9412         NaN      3.94375
+2    Jesus Verdejo  South Florida   BE  27     72.0   96.2  21.8  45.7   47.98      2.1      8.0     14.7    15.9   45   67   0.672     67    157     0.427   50  154   0.325      0.0      0.9  21.5  Sr  4-Jun  NaN  2.274070  104.1070  1.7  2009    5  all       NaN  1.081662      NaN              NaN      NaN              NaN                        NaN                        NaN        NaN                  NaN                              NaN   NaN  107.556  102.154  2.763870  115.0210  0.003161  1.024770 -1.021610  0.665065  33.1852  1.548230 -0.883163  0.6296  2.3333  2.9630  1.9630  0.4815  0.0000  12.1852         NaN     10.92680
+3  Mike Hornbuckle     Pepperdine  WCC  30     44.5   97.7  16.0  53.6   53.69      4.1      9.4     13.7    23.8   14   27   0.519     25     63     0.397   28   62   0.452      0.8      1.9  21.6  Sr  4-Jun  NaN  0.552857   93.2086  2.0  2009    8  all       NaN  0.942830      NaN              NaN      NaN              NaN                        NaN                        NaN        NaN                  NaN                              NaN   NaN  108.858  106.556  1.218710   84.1698 -0.977798 -0.502574 -0.475224 -0.736233  17.9667 -0.342775 -0.393459  0.7000  1.4333  2.1333  1.1000  0.5667  0.1333   4.9333         NaN      6.77427
+4    Anthony Brown        Pacific   BW  33     56.2   96.5  22.0  52.8   54.31      8.3     18.6      8.2    22.7   64  114   0.561     93    176     0.528    0    0   0.000      1.9      1.3  64.8  Sr  8-Jun  NaN  1.060130   97.8554  3.8  2009    9  all       NaN  0.491229      NaN              NaN      NaN              NaN                        NaN                        NaN        NaN                  NaN                              NaN   NaN  101.052  100.724  1.992790  128.0280 -1.836060 -1.946040  0.109983 -2.353180  22.9091 -1.684860 -0.668318  1.4242  3.3030  4.7273  0.8485  0.4545  0.3333   7.5758         NaN      0.00000

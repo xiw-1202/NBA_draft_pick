@@ -1,0 +1,295 @@
+=================================================================================
+DATA PROFILE REPORT: College Players Final Year Full
+=================================================================================
+
+1. BASIC INFORMATION
+----------------------------------------
+Number of rows: 25,719
+Number of columns: 66
+Memory usage: 22.01 MB
+
+2. COLUMN NAMES AND DATA TYPES
+----------------------------------------
+  player_name                    : object         
+  team                           : object         
+  conf                           : object         
+  GP                             : int64          
+  Min_per                        : float64        
+  Ortg                           : float64        
+  usg                            : float64        
+  eFG                            : float64        
+  TS_per                         : float64        
+  ORB_per                        : float64        
+  DRB_per                        : float64        
+  AST_per                        : float64        
+  TO_per                         : float64        
+  FTM                            : int64          
+  FTA                            : int64          
+  FT_per                         : float64        
+  twoPM                          : int64          
+  twoPA                          : int64          
+  twoP_per                       : float64        
+  TPM                            : int64          
+  TPA                            : int64          
+  TP_per                         : float64        
+  blk_per                        : float64        
+  stl_per                        : float64        
+  ftr                            : float64        
+  yr                             : object         
+  ht                             : object         
+  num                            : object         
+  porpag                         : float64        
+  adjoe                          : float64        
+  pfr                            : float64        
+  year                           : int64          
+  pid                            : int64          
+  type                           : object         
+  Rec Rank                       : float64        
+  ast/tov                        : float64        
+  rimmade                        : float64        
+  rimmade+rimmiss                : float64        
+  midmade                        : float64        
+  midmade+midmiss                : float64        
+  rimmade/(rimmade+rimmiss)      : float64        
+  midmade/(midmade+midmiss)      : float64        
+  dunksmade                      : float64        
+  dunksmiss+dunksmade            : float64        
+  dunksmade/(dunksmade+dunksmiss) : float64        
+  pick                           : float64        
+  drtg                           : float64        
+  adrtg                          : float64        
+  dporpag                        : float64        
+  stops                          : float64        
+  bpm                            : float64        
+  obpm                           : float64        
+  dbpm                           : float64        
+  gbpm                           : float64        
+  mp                             : float64        
+  ogbpm                          : float64        
+  dgbpm                          : float64        
+  oreb                           : float64        
+  dreb                           : float64        
+  treb                           : float64        
+  ast                            : float64        
+  stl                            : float64        
+  blk                            : float64        
+  pts                            : float64        
+  Unnamed: 64                    : object         
+  Unnamed: 65                    : float64        
+
+3. DATA TYPE SUMMARY
+----------------------------------------
+  float64         : 49 columns
+  int64           : 9 columns
+  object          : 8 columns
+
+4. MISSING VALUES
+----------------------------------------
+  pick                           :  25098 ( 97.6%)
+  Rec Rank                       :  19120 ( 74.3%)
+  dunksmade/(dunksmade+dunksmiss) :  14793 ( 57.5%)
+  midmade/(midmade+midmiss)      :   4792 ( 18.6%)
+  rimmade/(rimmade+rimmiss)      :   4693 ( 18.2%)
+  rimmade                        :   2627 ( 10.2%)
+  rimmade+rimmiss                :   2627 ( 10.2%)
+  midmade                        :   2627 ( 10.2%)
+  midmade+midmiss                :   2627 ( 10.2%)
+  dunksmade                      :   2627 ( 10.2%)
+  dunksmiss+dunksmade            :   2627 ( 10.2%)
+  ast/tov                        :   2539 (  9.9%)
+  num                            :   1785 (  6.9%)
+  Unnamed: 64                    :   1711 (  6.7%)
+  yr                             :    213 (  0.8%)
+  ht                             :     72 (  0.3%)
+  dbpm                           :     13 (  0.1%)
+  dgbpm                          :     13 (  0.1%)
+  ogbpm                          :     13 (  0.1%)
+  gbpm                           :     13 (  0.1%)
+  dporpag                        :     13 (  0.1%)
+  obpm                           :     13 (  0.1%)
+  bpm                            :     13 (  0.1%)
+  stops                          :     13 (  0.1%)
+  adrtg                          :     13 (  0.1%)
+  drtg                           :     13 (  0.1%)
+  Unnamed: 65                    :     13 (  0.1%)
+  mp                             :     11 (  0.0%)
+  oreb                           :     11 (  0.0%)
+  dreb                           :     11 (  0.0%)
+  treb                           :     11 (  0.0%)
+  ast                            :     11 (  0.0%)
+  stl                            :     11 (  0.0%)
+  blk                            :     11 (  0.0%)
+  pts                            :     11 (  0.0%)
+
+5. NUMERIC COLUMN STATISTICS (Top 10 by variance)
+----------------------------------------
+
+  pid:
+    Mean     :   35947.82
+    Std Dev  :   22620.86
+    Min      :       2.00
+    25%      :   16886.50
+    Median   :   34356.00
+    75%      :   50879.50
+    Max      :   74254.00
+
+  twoPA:
+    Mean     :      80.72
+    Std Dev  :      88.42
+    Min      :       0.00
+    25%      :       7.00
+    Median   :      48.00
+    75%      :     130.00
+    Max      :     607.00
+
+  stops:
+    Mean     :      77.07
+    Std Dev  :      67.91
+    Min      :       0.04
+    25%      :      10.95
+    Median   :      63.98
+    75%      :     131.44
+    Max      :     360.57
+
+  TPA:
+    Mean     :      43.78
+    Std Dev  :      58.87
+    Min      :       0.00
+    25%      :       1.00
+    Median   :      14.00
+    75%      :      71.00
+    Max      :     380.00
+
+  FTA:
+    Mean     :      44.33
+    Std Dev  :      51.62
+    Min      :       0.00
+    25%      :       4.00
+    Median   :      25.00
+    75%      :      68.00
+    Max      :     374.00
+
+  rimmade+rimmiss:
+    Mean     :      44.73
+    Std Dev  :      48.67
+    Min      :       0.00
+    25%      :       5.00
+    Median   :      28.00
+    75%      :      71.00
+    Max      :     358.00
+
+  midmade+midmiss:
+    Mean     :      38.93
+    Std Dev  :      46.33
+    Min      :       0.00
+    25%      :       4.00
+    Median   :      21.00
+    75%      :      59.00
+    Max      :     532.00
+
+  twoPM:
+    Mean     :      39.57
+    Std Dev  :      45.70
+    Min      :       0.00
+    25%      :       3.00
+    Median   :      22.00
+    75%      :      63.00
+    Max      :     311.00
+
+  ftr:
+    Mean     :      36.09
+    Std Dev  :      39.61
+    Min      :       0.00
+    25%      :      16.50
+    Median   :      30.90
+    75%      :      46.20
+    Max      :    1000.00
+
+  FTM:
+    Mean     :      31.40
+    Std Dev  :      38.64
+    Min      :       0.00
+    25%      :       2.00
+    Median   :      16.00
+    75%      :      48.00
+    Max      :     312.00
+
+6. CATEGORICAL COLUMN STATISTICS
+----------------------------------------
+
+  player_name:
+    Unique values: 25719
+      A'Torey Everett      :      1 (  0.0%)
+      Martin Jones II      :      1 (  0.0%)
+      Martino Brock        :      1 (  0.0%)
+      Martinas Geben       :      1 (  0.0%)
+      Martin Whitmore      :      1 (  0.0%)
+      ... (25714 more values)
+
+  team:
+    Unique values: 362
+      Jackson St.          :    115 (  0.4%)
+      Prairie View A&M     :    113 (  0.4%)
+      Mississippi Valley St. :    112 (  0.4%)
+      Grambling St.        :    111 (  0.4%)
+      Texas Southern       :    108 (  0.4%)
+      ... (357 more values)
+
+  conf:
+    Unique values: 36
+      MEAC                 :   1092 (  4.2%)
+      SWAC                 :   1062 (  4.1%)
+      Slnd                 :   1049 (  4.1%)
+      CUSA                 :    965 (  3.8%)
+      ACC                  :    961 (  3.7%)
+      ... (31 more values)
+
+  yr:
+    Unique values: 5
+      Sr                   :  12811 ( 49.8%)
+      Jr                   :   4642 ( 18.0%)
+      Fr                   :   4130 ( 16.1%)
+      So                   :   3920 ( 15.2%)
+      0                    :      3 (  0.0%)
+
+  ht:
+    Unique values: 37
+      7-Jun                :   2494 (  9.7%)
+      5-Jun                :   2475 (  9.6%)
+      4-Jun                :   2472 (  9.6%)
+      8-Jun                :   2414 (  9.4%)
+      3-Jun                :   2368 (  9.2%)
+      ... (32 more values)
+
+  num:
+    Unique values: 42
+      1                    :   1355 (  5.3%)
+      5                    :   1313 (  5.1%)
+      2                    :   1293 (  5.0%)
+      3                    :   1281 (  5.0%)
+      4                    :   1164 (  4.5%)
+      ... (37 more values)
+
+  type:
+    Unique values: 1
+      all                  :  25719 (100.0%)
+
+  Unnamed: 64:
+    Unique values: 8
+      Wing G               :   5223 ( 20.3%)
+      PF/C                 :   4637 ( 18.0%)
+      Combo G              :   3776 ( 14.7%)
+      C                    :   3319 ( 12.9%)
+      Scoring PG           :   2444 (  9.5%)
+      Wing F               :   2005 (  7.8%)
+      Stretch 4            :   1346 (  5.2%)
+      Pure PG              :   1258 (  4.9%)
+
+7. SAMPLE DATA (First 5 rows)
+----------------------------------------
+       player_name           team  conf  GP  Min_per   Ortg   usg   eFG  TS_per  ORB_per  DRB_per  AST_per  TO_per  FTM  FTA  FT_per  twoPM  twoPA  twoP_per  TPM  TPA  TP_per  blk_per  stl_per   ftr  yr     ht num    porpag     adjoe  pfr  year    pid type  Rec Rank   ast/tov  rimmade  rimmade+rimmiss  midmade  midmade+midmiss  rimmade/(rimmade+rimmiss)  midmade/(midmade+midmiss)  dunksmade  dunksmiss+dunksmade  dunksmade/(dunksmade+dunksmiss)  pick     drtg    adrtg   dporpag     stops       bpm      obpm     dbpm      gbpm       mp      ogbpm    dgbpm    oreb    dreb    treb     ast     stl     blk      pts Unnamed: 64  Unnamed: 65
+0  A'Torey Everett  Tennessee St.   OVC  23     19.0   88.0  15.7  40.5   50.08      1.6      8.1     14.5    30.6   18   23   0.783      9     30     0.300    4    7   0.571      0.6      0.3  62.2  So  4-Jun  23 -0.209268   80.4719  5.5  2017  47747  all       NaN  0.894657      4.0             10.0      5.0             21.0                     0.4000                     0.2381        0.0                  0.0                              NaN   NaN  105.146  105.770  0.750191   30.3809  -6.40612 -4.928820 -1.47730  -6.51514   9.7083  -5.633160 -0.88198  0.1250  0.7500  0.8750  0.7083  0.0833  0.0417   2.4167     Combo G      1.87827
+1    A'Torri Shine  Grambling St.  SWAC  27     78.2   90.2  23.5  44.9   47.61      3.4      9.4      8.4    17.2   44   60   0.733     76    177     0.429   44  139   0.317      0.5      1.6  19.0  Sr  6-Jun   1  0.522777   90.2165  2.6  2015  32648  all       NaN  0.413800     28.0             46.0     48.0            132.0                     0.6087                     0.3636        1.0                  3.0                           0.3333   NaN  113.119  119.166  0.894462  124.5890  -7.02713 -2.501440 -4.52570  -4.68909  31.5862  -1.255490 -3.43359  0.9310  2.6207  3.5517  0.8276  0.8966  0.1724  12.7586      Wing G     10.03230
+2  A'Uston Calhoun  Bowling Green   MAC  30     83.8   99.9  25.5  47.1   51.50      7.8     16.8      5.7    15.5   90  113   0.796    155    336     0.461   19   54   0.352      1.5      0.7  29.0  Sr  7-Jun  15  2.562650  105.9440  2.3  2013  26838  all       NaN  0.369225     79.0            122.0     69.0            196.0                     0.6475                     0.3520       24.0                 25.0                           0.9600   NaN  101.503  102.012  2.777940  157.1680  -3.12361 -1.285750 -1.83786  -1.06503  34.0667   0.949586 -2.01462  2.2667  4.7667  7.0333  0.8000  0.3667  0.4667  15.2333      Wing F      3.28661
+3  A'uston Calhoun  Bowling Green   MAC  31     72.8  101.8  25.4  47.9   51.26      9.4     15.4      5.0    15.0   76  107   0.710    162    333     0.486    5   21   0.238      1.5      1.0  30.2  Jr  7-Jun  15  2.511580  109.2140  3.0  2012  26838  all       NaN  0.357155     94.0            143.0     68.0            190.0                     0.6573                     0.3579       22.0                 24.0                           0.9167   NaN  101.580  100.972  2.563170  143.7760  -2.27858 -0.695114 -1.58347  -0.89729  29.2258   0.743714 -1.64100  2.2903  3.5806  5.8710  0.6452  0.4839  0.3871  13.3871      Wing F      1.42784
+4        A.C. Reid  Tennessee St.   OVC   8      6.4   22.6  13.9   7.1    7.14      0.0      6.9      5.2     5.9    0    0   0.000      0      0     0.000    1   21   0.048      2.0      0.8   0.0  Sr  5-Jun  11 -2.055250   20.5110  2.7  2018  52011  all       NaN  1.333333      0.0              0.0      0.0              0.0                        NaN                        NaN        0.0                  0.0                              NaN   NaN  105.970  101.773  0.849740   10.6084 -10.80000 -8.733310 -2.06671 -12.34380  10.2000 -10.044700 -2.29906  0.0000  0.7000  0.7000  0.4000  0.2000  0.1000   1.2000     Combo G     17.28820

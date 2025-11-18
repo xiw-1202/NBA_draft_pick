@@ -1,0 +1,316 @@
+{
+  "player_name": {
+    "standard": "player_name",
+    "variations": [
+      "player_name",
+      "PLAYER",
+      "Player",
+      "player",
+      "Name"
+    ],
+    "found_in": [
+      "college_stats",
+      "draft_data",
+      "raptor_data",
+      "final_year_data"
+    ]
+  },
+  "season": {
+    "standard": "season",
+    "variations": [
+      "year",
+      "Year",
+      "YEAR",
+      "Season",
+      "season"
+    ],
+    "found_in": [
+      "college_stats",
+      "draft_data",
+      "raptor_data",
+      "final_year_data"
+    ]
+  },
+  "team": {
+    "standard": "team",
+    "variations": [
+      "team",
+      "Team",
+      "TEAM"
+    ],
+    "found_in": [
+      "college_stats",
+      "draft_data",
+      "final_year_data"
+    ]
+  },
+  "school": {
+    "standard": "school",
+    "variations": [
+      "AFFILIATION",
+      "school",
+      "team",
+      "college"
+    ],
+    "found_in": [
+      "college_stats",
+      "draft_data",
+      "final_year_data"
+    ]
+  },
+  "nba_team": {
+    "standard": "nba_team",
+    "variations": [
+      "TEAM",
+      "team",
+      "nba_team"
+    ],
+    "found_in": [
+      "college_stats",
+      "draft_data",
+      "final_year_data"
+    ]
+  },
+  "draft_pick": {
+    "standard": "draft_pick",
+    "variations": [
+      "pick",
+      "OVERALL",
+      "Overall",
+      "draft_position"
+    ],
+    "found_in": [
+      "college_stats",
+      "draft_data",
+      "final_year_data"
+    ]
+  },
+  "draft_round": {
+    "standard": "draft_round",
+    "variations": [
+      "ROUND",
+      "Round",
+      "round"
+    ],
+    "found_in": [
+      "draft_data"
+    ]
+  },
+  "conference": {
+    "standard": "conference",
+    "variations": [
+      "conf",
+      "Conference",
+      "CONF"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "height": {
+    "standard": "height",
+    "variations": [
+      "ht",
+      "Height",
+      "height"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "games_played": {
+    "standard": "games_played",
+    "variations": [
+      "GP",
+      "gp",
+      "games_played"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "points": {
+    "standard": "points",
+    "variations": [
+      "pts",
+      "PTS",
+      "Points",
+      "points"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "minutes": {
+    "standard": "minutes",
+    "variations": [
+      "mp",
+      "MP",
+      "Min_per",
+      "minutes"
+    ],
+    "found_in": [
+      "college_stats",
+      "raptor_data",
+      "final_year_data"
+    ]
+  },
+  "assists": {
+    "standard": "assists",
+    "variations": [
+      "ast",
+      "AST",
+      "assists",
+      "Assists"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "rebounds": {
+    "standard": "rebounds",
+    "variations": [
+      "treb",
+      "REB",
+      "rebounds",
+      "total_rebounds"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "field_goal_pct": {
+    "standard": "fg_pct",
+    "variations": [
+      "eFG",
+      "FG_per",
+      "fg_pct"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "true_shooting_pct": {
+    "standard": "ts_pct",
+    "variations": [
+      "TS_per",
+      "ts_pct",
+      "true_shooting"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "three_point_pct": {
+    "standard": "three_pct",
+    "variations": [
+      "TP_per",
+      "3P_per",
+      "three_pct"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "free_throw_pct": {
+    "standard": "ft_pct",
+    "variations": [
+      "FT_per",
+      "ft_pct"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "usage_rate": {
+    "standard": "usage_rate",
+    "variations": [
+      "usg",
+      "usage",
+      "usage_rate"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "offensive_rating": {
+    "standard": "offensive_rating",
+    "variations": [
+      "Ortg",
+      "ortg",
+      "offensive_rating"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "defensive_rating": {
+    "standard": "defensive_rating",
+    "variations": [
+      "drtg",
+      "Drtg",
+      "defensive_rating"
+    ],
+    "found_in": [
+      "college_stats",
+      "final_year_data"
+    ]
+  },
+  "raptor_offense": {
+    "standard": "raptor_offense",
+    "variations": [
+      "raptor_offense",
+      "raptor_box_offense",
+      "raptor_onoff_offense"
+    ],
+    "found_in": [
+      "raptor_data"
+    ]
+  },
+  "raptor_defense": {
+    "standard": "raptor_defense",
+    "variations": [
+      "raptor_defense",
+      "raptor_box_defense",
+      "raptor_onoff_defense"
+    ],
+    "found_in": [
+      "raptor_data"
+    ]
+  },
+  "raptor_total": {
+    "standard": "raptor_total",
+    "variations": [
+      "raptor_total",
+      "raptor_box_total",
+      "raptor_onoff_total"
+    ],
+    "found_in": [
+      "raptor_data"
+    ]
+  },
+  "war": {
+    "standard": "war",
+    "variations": [
+      "war_total",
+      "war_reg_season",
+      "war_playoffs",
+      "WAR"
+    ],
+    "found_in": [
+      "raptor_data"
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+=================================================================================
+DATA PROFILE REPORT: NBA RAPTOR Performance Metrics
+=================================================================================
+
+1. BASIC INFORMATION
+----------------------------------------
+Number of rows: 4,079
+Number of columns: 21
+Memory usage: 1.06 MB
+
+2. COLUMN NAMES AND DATA TYPES
+----------------------------------------
+  player_name                    : object         
+  player_id                      : object         
+  season                         : int64          
+  poss                           : int64          
+  mp                             : int64          
+  raptor_box_offense             : float64        
+  raptor_box_defense             : float64        
+  raptor_box_total               : float64        
+  raptor_onoff_offense           : float64        
+  raptor_onoff_defense           : float64        
+  raptor_onoff_total             : float64        
+  raptor_offense                 : float64        
+  raptor_defense                 : float64        
+  raptor_total                   : float64        
+  war_total                      : float64        
+  war_reg_season                 : float64        
+  war_playoffs                   : float64        
+  predator_offense               : float64        
+  predator_defense               : float64        
+  predator_total                 : float64        
+  pace_impact                    : float64        
+
+3. DATA TYPE SUMMARY
+----------------------------------------
+  float64         : 16 columns
+  int64           : 3 columns
+  object          : 2 columns
+
+4. MISSING VALUES
+----------------------------------------
+  raptor_box_offense             :      1 (  0.0%)
+  raptor_box_defense             :      1 (  0.0%)
+  raptor_box_total               :      1 (  0.0%)
+  raptor_onoff_offense           :      1 (  0.0%)
+  raptor_onoff_defense           :      1 (  0.0%)
+  raptor_onoff_total             :      1 (  0.0%)
+  pace_impact                    :      1 (  0.0%)
+
+5. NUMERIC COLUMN STATISTICS (Top 10 by variance)
+----------------------------------------
+
+  poss:
+    Mean     :    2482.06
+    Std Dev  :    1849.41
+    Min      :       2.00
+    25%      :     755.50
+    Median   :    2310.00
+    75%      :    3915.50
+    Max      :    8026.00
+
+  mp:
+    Mean     :    1207.20
+    Std Dev  :     906.31
+    Min      :       1.00
+    25%      :     362.00
+    Median   :    1120.00
+    75%      :    1910.00
+    Max      :    3948.00
+
+  raptor_onoff_total:
+    Mean     :      -1.31
+    Std Dev  :       7.82
+    Min      :    -109.34
+    25%      :      -3.94
+    Median   :      -0.88
+    75%      :       1.99
+    Max      :     123.15
+
+  raptor_onoff_offense:
+    Mean     :      -1.46
+    Std Dev  :       5.88
+    Min      :     -67.52
+    25%      :      -3.25
+    Median   :      -1.04
+    75%      :       1.12
+    Max      :      85.41
+
+  raptor_onoff_defense:
+    Mean     :       0.15
+    Std Dev  :       5.85
+    Min      :     -77.13
+    25%      :      -1.84
+    Median   :       0.03
+    75%      :       1.96
+    Max      :      66.52
+
+  raptor_total:
+    Mean     :      -1.51
+    Std Dev  :       5.60
+    Min      :     -63.75
+    25%      :      -3.46
+    Median   :      -1.08
+    75%      :       1.08
+    Max      :      72.62
+
+  raptor_box_total:
+    Mean     :      -1.46
+    Std Dev  :       5.33
+    Min      :     -61.67
+    25%      :      -3.36
+    Median   :      -0.98
+    75%      :       1.01
+    Max      :      54.87
+
+  predator_total:
+    Mean     :      -1.70
+    Std Dev  :       4.95
+    Min      :     -55.78
+    25%      :      -3.84
+    Median   :      -1.38
+    75%      :       0.95
+    Max      :      49.11
+
+  raptor_offense:
+    Mean     :      -1.22
+    Std Dev  :       4.00
+    Min      :     -45.32
+    25%      :      -2.63
+    Median   :      -0.99
+    75%      :       0.54
+    Max      :      53.23
+
+  raptor_defense:
+    Mean     :      -0.30
+    Std Dev  :       3.83
+    Min      :     -43.21
+    25%      :      -1.75
+    Median   :      -0.23
+    75%      :       1.24
+    Max      :      62.47
+
+6. CATEGORICAL COLUMN STATISTICS
+----------------------------------------
+
+  player_name:
+    Unique values: 1192
+      Stephen Curry        :      8 (  0.2%)
+      JJ Redick            :      8 (  0.2%)
+      Jonas Valanciunas    :      8 (  0.2%)
+      Ersan Ilyasova       :      8 (  0.2%)
+      Jared Dudley         :      8 (  0.2%)
+      ... (1187 more values)
+
+  player_id:
+    Unique values: 1187
+      curryst01            :      8 (  0.2%)
+      favorde01            :      8 (  0.2%)
+      tollian01            :      8 (  0.2%)
+      biyombi01            :      8 (  0.2%)
+      harklma01            :      8 (  0.2%)
+      ... (1182 more values)
+
+7. SAMPLE DATA (First 5 rows)
+----------------------------------------
+      player_name  player_id  season  poss    mp  raptor_box_offense  raptor_box_defense  raptor_box_total  raptor_onoff_offense  raptor_onoff_defense  raptor_onoff_total  raptor_offense  raptor_defense  raptor_total  war_total  war_reg_season  war_playoffs  predator_offense  predator_defense  predator_total  pace_impact
+0   Stephen Curry  curryst01    2016  7053  3314           10.532883            1.688492         12.221375              7.781331              3.408263           11.189594       10.379411        2.108447     12.487858  26.666873       23.659318      3.007555         10.635103          2.712822       13.347925     3.306111
+1   Stephen Curry  curryst01    2015  7192  3439            8.504968            1.677165         10.182132              7.218913              5.109589           12.328502        8.600890        2.437371     11.038262  25.089873       19.914785      5.175088          8.787715          2.657047       11.444762     3.130309
+2  Draymond Green  greendr01    2016  7778  3687            2.645310            4.760084          7.405394              8.459053              6.767176           15.226230        3.934410        5.423060      9.357470  23.470494       17.817424      5.653070          4.266894          5.817697       10.084592     2.247664
+3    James Harden  hardeja01    2019  6728  3291            9.959259            1.792524         11.751782              5.379972             -1.766076            3.613895        9.566047        1.149234     10.715281  22.791368       20.057946      2.733422         10.893131          1.676179       12.569309     0.463845
+4      Chris Paul   paulch01    2015  6633  3302            7.508889            2.398886          9.907775             11.087445              0.313065           11.400510        8.557501        2.111893     10.669395  22.609142       19.418015      3.191128          8.772725          2.137896       10.910621    -0.393643

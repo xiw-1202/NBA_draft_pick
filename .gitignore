@@ -40,16 +40,12 @@ ENV/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Data (keep structure, ignore large files)
+# Data - Only exclude RAW dataset (from Kaggle)
 Data/RAW/*.csv
-Data/PROCESSED/*.csv
-!Data/PROCESSED/feature_names.csv
-!Data/PROCESSED/feature_name_mapping.csv
+Data/RAW/*.xlsx
 
-# Models (keep small files, ignore large models)
-Models/*.txt
-Models/*.csv
-!Models/training_summary.txt
+# Include all processed data and models
+# (These are generated outputs from the pipeline)
 
 # Visualizations (optional - comment out if you want to track)
 Visualizations/*.png

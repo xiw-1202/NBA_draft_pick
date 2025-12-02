@@ -84,10 +84,13 @@ Players who were:
    ```
 
 3. **Prepare data**
+   - Download the original dataset from [Kaggle](https://www.kaggle.com/datasets/adityak2003/college-basketball-players-20092021/data)
    - Place raw data files in `Data/RAW/`:
      - `CollegeBasketballPlayers2009-2021.csv`
      - `DraftedPlayers2009-2021.xlsx`
      - `modern_RAPTOR_by_player.csv`
+
+   **Note:** Processed data and trained models are included in this repository
 
 ### Running the Pipeline
 
@@ -196,9 +199,17 @@ Datalab_NBA_Pick/
 
 ## 📊 Data Sources
 
+### Original Dataset
+**Kaggle:** [College Basketball Players 2009-2021](https://www.kaggle.com/datasets/adityak2003/college-basketball-players-20092021/data)
+
 - **College Basketball Data:** 2009-2021 season statistics
-- **NBA Draft Data:** Official draft picks and positions
+- **NBA Draft Data:** Official draft picks and positions (DraftedPlayers2009-2021.xlsx)
 - **NBA Performance Data:** FiveThirtyEight RAPTOR ratings
+
+### Data Files Structure
+- `Data/RAW/` - Original Kaggle dataset (not included in repository)
+- `Data/PROCESSED/` - Cleaned and feature-engineered datasets (included)
+- `Models/` - Trained LightGBM models and predictions (included)
 
 ---
 

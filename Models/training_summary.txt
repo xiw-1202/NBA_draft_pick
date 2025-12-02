@@ -1,0 +1,84 @@
+
+================================================================================
+NBA DRAFT PREDICTION - MODEL TRAINING SUMMARY
+================================================================================
+
+Date: 2025-12-01 19:07:57
+
+DATASET:
+--------
+Training Set (2009-2018): 16,643 players
+Test Set (2019-2021):     8,573 players
+Features Used:            139
+
+CLASSIFIER PERFORMANCE (Draft Status):
+--------------------------------------
+Accuracy:   0.9704
+Precision:  0.3606
+Recall:     0.8258
+F1-Score:   0.5020
+ROC-AUC:    0.9674
+
+Confusion Matrix:
+                Predicted
+                No      Yes
+Actual  No      8,191   227
+        Yes     27     128
+
+REGRESSOR PERFORMANCE (Draft Pick):
+------------------------------------
+MAE (Mean Absolute Error):  11.93 picks
+RMSE:                       15.09 picks
+R² Score:                   0.2474
+
+Prediction Accuracy:
+- Within  5 picks: 25.8%
+- Within 10 picks: 51.6%
+- Within 15 picks: 67.7%
+
+DIAMOND PLAYER DETECTION:
+--------------------------
+Actual diamonds in test:      28
+Model predicted diamonds:     21
+Correctly identified:         14
+
+TOP FEATURES (CLASSIFIER):
+--------------------------
+               feature    importance
+               dporpag 143418.942697
+        bpm_career_avg  47295.140865
+    class_year_numeric  15191.152044
+                  gbpm  13847.309767
+        pts_career_avg   7152.502729
+       treb_career_avg   6932.448499
+treb_total_improvement   5864.114475
+              Rec_Rank   5573.890596
+                porpag   3697.612371
+          ast_to_ratio   3449.473026
+
+TOP FEATURES (REGRESSOR):
+-------------------------
+              feature    importance
+   class_year_numeric 219490.702232
+             Rec_Rank  70660.717926
+       bpm_career_avg  61322.097960
+                 gbpm  31700.244400
+            is_senior  31487.481552
+                  bpm  29445.636490
+pts_total_improvement  23756.969040
+               porpag  22260.778275
+                adjoe  22193.922833
+              dporpag  22180.772934
+
+OUTPUT FILES:
+-------------
+✅ Models/lightgbm_classifier.txt
+✅ Models/lightgbm_regressor.txt
+✅ Models/classifier_feature_importance.csv
+✅ Models/regressor_feature_importance.csv
+✅ Models/test_predictions.csv
+✅ Models/actual_diamond_players.csv
+✅ Models/predicted_diamond_players.csv
+✅ Models/training_summary.txt
+
+================================================================================

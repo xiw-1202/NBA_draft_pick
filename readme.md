@@ -46,6 +46,14 @@ Players who were:
 - **50% detection rate** - Model correctly identified 14 of 28 diamonds
 - Top diamond: **JaQuori McLaughlin** (RAPTOR: 23.4, Model prob: 74.7%)
 
+### Performance Visualizations
+
+![Performance Dashboard](Visualizations/6_performance_dashboard.png)
+*Comprehensive model performance metrics across all evaluation criteria*
+
+![Feature Importance](Visualizations/1_feature_importance.png)
+*Top 15 most important features for draft prediction - defensive rating leads*
+
 ---
 
 ## 📊 Key Insights Discovered
@@ -55,6 +63,9 @@ Players who were:
 - Seniors are **more likely to be drafted** overall
 - But drafted **significantly later** (lower picks)
 - **NBA values potential over production** - favors younger players
+
+![Class Year Analysis](Visualizations/5_class_year_analysis.png)
+*Visual evidence of the "senior penalty" - younger players get higher draft picks*
 
 ### 2. **Defense Matters Most for Getting Drafted** 🛡️
 
@@ -176,6 +187,14 @@ Datalab_NBA_Pick/
 - **LightGBM Regressor:** Predicts draft position (1-60)
 - **Hyperparameters:** Tuned for class imbalance and evaluation metrics
 
+### Model Evaluation
+
+![Confusion Matrix](Visualizations/2_confusion_matrix.png)
+*Classifier confusion matrix showing high accuracy in draft status prediction*
+
+![Prediction Distribution](Visualizations/3_prediction_distribution.png)
+*Draft probability distributions - model effectively separates drafted vs undrafted players*
+
 ---
 
 ## 💎 Top Diamond Players Found
@@ -185,6 +204,9 @@ Datalab_NBA_Pick/
 | JaQuori McLaughlin | 2021 | Undrafted | 23.4       | 74.7% ✓           |
 | Devon Dotson       | 2020 | Undrafted | 14.0       | 91.6% ✓           |
 | Max Strus          | 2019 | Undrafted | 12.2       | 8.6% ✗            |
+
+![Diamond Players](Visualizations/4_diamond_players.png)
+*Diamond player detection - comparing actual vs predicted undervalued talents*
 
 ---
 

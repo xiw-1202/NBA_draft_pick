@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data (keep structure, ignore large files)
+Data/RAW/*.csv
+Data/PROCESSED/*.csv
+!Data/PROCESSED/feature_names.csv
+!Data/PROCESSED/feature_name_mapping.csv
+
+# Models (keep small files, ignore large models)
+Models/*.txt
+Models/*.csv
+!Models/training_summary.txt
+
+# Visualizations (optional - comment out if you want to track)
+Visualizations/*.png
+Visualizations/*.jpg
+Visualizations/*.pdf
+
+# Environment variables
+.env
+.env.local

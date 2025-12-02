@@ -1,0 +1,43 @@
+
+DATA CLEANING PATCH - CHANGELOG
+================================
+
+Date: 2025-12-01 18:50:30
+
+CHANGES MADE:
+1. Improved name standardization
+   - Removed apostrophes and hyphens (De'Andre -> deandre)
+   - Better handling of name variants
+   - 2 names improved
+
+2. Merged duplicate players
+   - Found 495 players with multiple entries
+   - Kept most recent year entry for each player
+   - Removed 0 duplicate rows
+
+3. Fixed mixed data types
+   - Fixed 'num' column (jersey number)
+   - Converted 0 columns to numeric
+
+4. Re-validated draft matching
+   - Ensured consistency between draft_pick and was_drafted
+   - Final drafted count: 619
+
+5. Recalculated diamond players
+   - New count: 112
+
+6. Filled missing values
+   - Basic stats (pts, treb, ast): filled with 0
+   - Percentages: filled with median
+   - BPM: filled with -5.0
+
+FINAL STATISTICS:
+- Total players: 25,216
+- Unique names: 25,216
+- Drafted: 619
+- Diamond players: 112
+
+FILES CREATED:
+- processed_data_clean.csv (main cleaned file)
+- processed_data_v1_cleaned.csv (backup)
+- diamond_players_clean.csv (updated diamonds)

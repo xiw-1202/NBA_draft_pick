@@ -1,0 +1,199 @@
+FEATURE LIST FOR MODELING
+================================================================================
+
+Total Features: 139
+
+
+Per-Game Stats (8 features):
+--------------------------------------------------------------------------------
+  - apg
+  - bpg
+  - drpg
+  - mpg
+  - orpg
+  - ppg
+  - rpg
+  - spg
+
+Shooting Metrics (17 features):
+--------------------------------------------------------------------------------
+  - dunk_pct
+  - efg_pct
+  - ft_made_per_game
+  - ft_pct
+  - ft_rate
+  - games_played_pct
+  - mid_pct
+  - pts_career_avg
+  - pts_improvement
+  - pts_total_improvement
+  - rim_pct
+  - three_pt_made_per_game
+  - three_pt_pct
+  - three_pt_rate
+  - ts_pct
+  - two_pt_pct
+  - two_pt_rate
+
+Efficiency (34 features):
+--------------------------------------------------------------------------------
+  - AST_per
+  - DRB_per
+  - FT_per
+  - Min_per
+  - Min_per_career_avg
+  - Min_per_improvement
+  - Min_per_total_improvement
+  - ORB_per
+  - TO_per
+  - TP_per
+  - TS_per
+  - TS_per_career_avg
+  - TS_per_improvement
+  - TS_per_total_improvement
+  - adj_defensive_rating
+  - blk_per
+  - bpm
+  - bpm_career_avg
+  - bpm_improvement
+  - bpm_total_improvement
+  - conf_avg_bpm
+  - dbpm
+  - defensive_rating
+  - dgbpm
+  - efficiency_composite
+  - ft_made_per_game
+  - gbpm
+  - obpm
+  - offensive_rating
+  - ogbpm
+  - per
+  - stl_per
+  - three_pt_made_per_game
+  - twoP_per
+
+Rebounding (10 features):
+--------------------------------------------------------------------------------
+  - drb_rate
+  - dreb
+  - orb_rate
+  - oreb
+  - reb_dominance
+  - total_reb_rate
+  - treb
+  - treb_career_avg
+  - treb_improvement
+  - treb_total_improvement
+
+Defense (11 features):
+--------------------------------------------------------------------------------
+  - adj_defensive_rating
+  - adrtg
+  - blk
+  - blk_per
+  - blk_rate
+  - defensive_contrib
+  - defensive_rating
+  - drtg
+  - stl
+  - stl_per
+  - stl_rate
+
+Experience (6 features):
+--------------------------------------------------------------------------------
+  - class_year_numeric
+  - is_freshman
+  - is_senior
+  - year
+  - years_in_college
+  - years_played
+
+Development (21 features):
+--------------------------------------------------------------------------------
+  - Min_per_career_avg
+  - Min_per_improvement
+  - Min_per_total_improvement
+  - TS_per_career_avg
+  - TS_per_improvement
+  - TS_per_total_improvement
+  - ast_career_avg
+  - ast_improvement
+  - ast_total_improvement
+  - bpm_career_avg
+  - bpm_improvement
+  - bpm_total_improvement
+  - pts_career_avg
+  - pts_improvement
+  - pts_total_improvement
+  - treb_career_avg
+  - treb_improvement
+  - treb_total_improvement
+  - usg_career_avg
+  - usg_improvement
+  - usg_total_improvement
+
+Conference (4 features):
+--------------------------------------------------------------------------------
+  - conf_avg_bpm
+  - conf_avg_defense
+  - conf_avg_offense
+  - is_major_conf
+
+Position (8 features):
+--------------------------------------------------------------------------------
+  - pos_C
+  - pos_Combo G
+  - pos_PF/C
+  - pos_Pure PG
+  - pos_Scoring PG
+  - pos_Stretch 4
+  - pos_Wing F
+  - pos_Wing G
+
+Physical (1 features):
+--------------------------------------------------------------------------------
+  - height_inches
+
+Other (41 features):
+--------------------------------------------------------------------------------
+  - FTA
+  - FTM
+  - GP
+  - Ortg
+  - Rec Rank
+  - TPA
+  - TPM
+  - Unnamed: 65
+  - adjoe
+  - ast
+  - ast/tov
+  - ast_to_ratio
+  - dporpag
+  - dunksmade
+  - dunksmade/(dunksmade+dunksmiss)
+  - dunksmiss+dunksmade
+  - eFG
+  - ftr
+  - is_junior
+  - is_sophomore
+  - is_starter
+  - midmade
+  - midmade+midmiss
+  - midmade/(midmade+midmiss)
+  - mp
+  - num
+  - pfr
+  - porpag
+  - pts
+  - rimmade
+  - rimmade+rimmiss
+  - rimmade/(rimmade+rimmiss)
+  - scoring_versatility
+  - stops
+  - total_minutes
+  - tsa
+  - twoPA
+  - twoPM
+  - usage_rate
+  - usg
+  - well_rounded_score

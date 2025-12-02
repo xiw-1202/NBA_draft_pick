@@ -47,10 +47,10 @@ Data/RAW/*.xlsx
 # Include all processed data and models
 # (These are generated outputs from the pipeline)
 
-# Visualizations (optional - comment out if you want to track)
-Visualizations/*.png
-Visualizations/*.jpg
-Visualizations/*.pdf
+# Include visualizations
+# Visualizations/*.png
+# Visualizations/*.jpg
+# Visualizations/*.pdf
 
 # Environment variables
 .env

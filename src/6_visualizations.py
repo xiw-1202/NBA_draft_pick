@@ -320,82 +320,114 @@ plt.close()
 # ============================================================================
 print("\n5️⃣ Creating diamond players plot...")
 
-diamonds = predictions[predictions["is_diamond"] == True]
+# Load full diamond data with career stats
+DATA_DIR = PROJECT_ROOT / "Data" / "PROCESSED"
+diamonds_full = pd.read_csv(DATA_DIR / "diamond_players_clean.csv", low_memory=False)
 
-fig, ax = plt.subplots(figsize=(12, 8))
+# Get top 20 diamonds by WAR
+top_diamonds = diamonds_full.nlargest(20, "war_total_sum").copy()
 
-# Plot all players (background)
-ax.scatter(
-    predictions["bpm"],
-    predictions["raptor_total_mean"],
-    alpha=0.2,
-    s=30,
-    c="gray",
-    label="All Players",
-)
+# Create figure with two subplots
+fig = plt.figure(figsize=(16, 10))
+gs = fig.add_gridspec(2, 2, height_ratios=[2, 1], hspace=0.3, wspace=0.3)
 
-# Highlight drafted players
-drafted_all = predictions[predictions["was_drafted"] == 1]
-ax.scatter(
-    drafted_all["bpm"],
-    drafted_all["raptor_total_mean"],
-    alpha=0.5,
-    s=50,
-    c="blue",
-    label="Drafted",
-)
+# ============================================================================
+# Plot 1: Top 20 Diamonds by Career WAR (Main Plot)
+# ============================================================================
+ax1 = fig.add_subplot(gs[0, :])
 
-# Highlight diamonds
-ax.scatter(
-    diamonds["bpm"],
-    diamonds["raptor_total_mean"],
-    s=200,
-    c="gold",
-    edgecolors="red",
-    linewidths=2,
-    marker="*",
-    label="Diamond Players",
-    zorder=10,
-)
+# Prepare data
+top_diamonds = top_diamonds.sort_values("war_total_sum", ascending=True)
+colors = ["#FF6B6B" if pd.isna(x) else "#4ECDC4" for x in top_diamonds["draft_pick"]]
+labels = []
+for _, row in top_diamonds.iterrows():
+    if pd.isna(row["draft_pick"]):
+        labels.append(f"{row['player_name_clean']} (Undrafted)")
+    else:
+        labels.append(f"{row['player_name_clean']} (#{int(row['draft_pick'])})")
 
-# Annotate top 5 diamonds
-top_diamonds = diamonds.nlargest(5, "raptor_total_mean")
-for idx, row in top_diamonds.iterrows():
-    ax.annotate(
-        row["player_name_clean"][:15],
-        (row["bpm"], row["raptor_total_mean"]),
-        xytext=(10, 5),
-        textcoords="offset points",
-        fontsize=9,
-        bbox=dict(boxstyle="round,pad=0.3", facecolor="yellow", alpha=0.7),
-    )
+# Create horizontal bar chart
+bars = ax1.barh(range(len(top_diamonds)), top_diamonds["war_total_sum"], color=colors, edgecolor="black", linewidth=0.5)
 
-ax.axhline(0, color="black", linestyle="--", alpha=0.3)
-ax.axvline(0, color="black", linestyle="--", alpha=0.3)
-ax.set_xlabel("College BPM (Box Plus/Minus)", fontsize=11, fontweight="bold")
-ax.set_ylabel("NBA RAPTOR (Performance)", fontsize=11, fontweight="bold")
-ax.set_title(
-    "Diamond Players: High NBA Performance Despite Low Draft Status",
-    fontsize=13,
-    fontweight="bold",
-)
-ax.legend(loc="upper left")
-ax.grid(alpha=0.3)
+# Add value labels on bars
+for i, (bar, war, seasons) in enumerate(zip(bars, top_diamonds["war_total_sum"], top_diamonds["season_count"])):
+    width = bar.get_width()
+    ax1.text(width + 1, bar.get_y() + bar.get_height()/2,
+             f'{war:.1f} WAR ({int(seasons)} seasons)',
+             ha='left', va='center', fontsize=8, fontweight='bold')
 
-# Add stats box
-stats_text = f"Diamond Players: {len(diamonds)}\nDetection Rate: 50.0%"
-ax.text(
-    0.98,
-    0.02,
-    stats_text,
-    transform=ax.transAxes,
-    fontsize=10,
-    verticalalignment="bottom",
-    horizontalalignment="right",
-    bbox=dict(boxstyle="round", facecolor="wheat", alpha=0.7),
-)
+ax1.set_yticks(range(len(top_diamonds)))
+ax1.set_yticklabels(labels, fontsize=9)
+ax1.set_xlabel("Career WAR (Wins Above Replacement)", fontsize=12, fontweight="bold")
+ax1.set_title("💎 Top 20 Diamond Players: Late Picks/Undrafted Who Became NBA Stars",
+              fontsize=14, fontweight="bold", pad=20)
+ax1.grid(axis="x", alpha=0.3)
+ax1.set_xlim(0, max(top_diamonds["war_total_sum"]) * 1.15)
 
-plt.tight_layout()
+# Add legend
+from matplotlib.patches import Patch
+legend_elements = [
+    Patch(facecolor="#FF6B6B", edgecolor="black", label="Undrafted"),
+    Patch(facecolor="#4ECDC4", edgecolor="black", label="Late Pick (#31-60)")
+]
+ax1.legend(handles=legend_elements, loc="lower right", fontsize=10)
+
+# ============================================================================
+# Plot 2: Distribution by Draft Status
+# ============================================================================
+ax2 = fig.add_subplot(gs[1, 0])
+
+draft_counts = diamonds_full["draft_pick"].isna().value_counts()
+labels_pie = ["Undrafted", "Late Pick"]
+sizes = [draft_counts.get(True, 0), draft_counts.get(False, 0)]
+colors_pie = ["#FF6B6B", "#4ECDC4"]
+
+wedges, texts, autotexts = ax2.pie(sizes, labels=labels_pie, colors=colors_pie, autopct='%1.0f%%',
+                                     startangle=90, textprops={'fontsize': 11, 'fontweight': 'bold'})
+ax2.set_title(f"Diamond Distribution\n(Total: {len(diamonds_full)} players)",
+              fontsize=12, fontweight="bold")
+
+# ============================================================================
+# Plot 3: Career Stats Summary
+# ============================================================================
+ax3 = fig.add_subplot(gs[1, 1])
+
+stats = {
+    'Avg WAR': diamonds_full["war_total_sum"].mean(),
+    'Avg Seasons': diamonds_full["season_count"].mean(),
+    'Avg Minutes': diamonds_full["mp_sum"].mean() / 1000,  # in thousands
+    'Max WAR': diamonds_full["war_total_sum"].max()
+}
+
+bars2 = ax3.bar(range(len(stats)), list(stats.values()),
+                color=["#FFD93D", "#6BCB77", "#4D96FF", "#FF6B9D"],
+                edgecolor="black", linewidth=1.5)
+
+# Add value labels
+for bar, (stat_name, val) in zip(bars2, stats.items()):
+    height = bar.get_height()
+    if stat_name == 'Avg Minutes':
+        label = f'{val:.1f}K'
+    else:
+        label = f'{val:.1f}'
+    ax3.text(bar.get_x() + bar.get_width()/2, height + max(stats.values())*0.02,
+             label, ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+ax3.set_xticks(range(len(stats)))
+ax3.set_xticklabels(list(stats.keys()), fontsize=10, rotation=15, ha='right')
+ax3.set_title("Career Statistics Summary", fontsize=12, fontweight="bold")
+ax3.set_ylabel("Value", fontsize=11)
+ax3.grid(axis="y", alpha=0.3)
+ax3.set_ylim(0, max(stats.values()) * 1.15)
+
+# ============================================================================
+# Add overall caption
+# ============================================================================
+fig.text(0.5, 0.02,
+         "Definition: Late picks (#31-60) or undrafted players with Career WAR ≥ 10.0 and Minutes ≥ 2,000\n" +
+         "These players defied expectations and became significant NBA contributors",
+         ha='center', fontsize=10, style='italic', color='gray')
+
 plt.savefig(OUTPUT_DIR / "4_diamond_players.png", dpi=300, bbox_inches="tight")
 print(f"   ✅ Saved: 4_diamond_players.png")
 plt.close()

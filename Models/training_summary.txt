@@ -3,13 +3,13 @@
 NBA DRAFT PREDICTION - MODEL TRAINING SUMMARY
 ================================================================================
 
-Date: 2025-12-01 19:07:57
+Date: 2025-12-02 19:13:33
 
 DATASET:
 --------
 Training Set (2009-2018): 16,643 players
 Test Set (2019-2021):     8,573 players
-Features Used:            139
+Features Used:            138
 
 CLASSIFIER PERFORMANCE (Draft Status):
 --------------------------------------
@@ -38,9 +38,9 @@ Prediction Accuracy:
 
 DIAMOND PLAYER DETECTION:
 --------------------------
-Actual diamonds in test:      28
+Actual diamonds in test:      1
 Model predicted diamonds:     21
-Correctly identified:         14
+Correctly identified:         0
 
 TOP FEATURES (CLASSIFIER):
 --------------------------

@@ -186,8 +186,13 @@ print(f"   ✅ Final drafted count: {df['was_drafted'].sum():,}")
 print("\n6️⃣ Recalculating diamond players...")
 
 # Recalculate with cleaned data
+# Definition: Late/undrafted players with successful NBA careers
+# Success criteria:
+#   - Career WAR >= 10.0 (significant positive contribution)
+#   - Minutes >= 2000 (meaningful playing time, ~1-2 seasons)
+# This filters out players with tiny sample sizes (e.g., 2-8 minutes)
 df["is_low_pick"] = (df["draft_pick"] > 30) | (df["was_drafted"] == 0)
-df["is_high_nba_performer"] = df["raptor_total_mean"] > 0
+df["is_high_nba_performer"] = (df["war_total_sum"] >= 10.0) & (df["mp_sum"] >= 2000)
 df["is_diamond"] = df["is_low_pick"] & df["is_high_nba_performer"]
 
 diamond_count = df["is_diamond"].sum()
@@ -195,12 +200,12 @@ print(f"   ✅ Diamond players: {diamond_count:,}")
 
 # Show top diamonds
 if diamond_count > 0:
-    print("\n   Top 10 Diamond Players (by RAPTOR):")
+    print("\n   Top 10 Diamond Players (by career WAR):")
     diamonds = df[df["is_diamond"] == True].sort_values(
-        "raptor_total_mean", ascending=False
+        "war_total_sum", ascending=False
     )
     top_diamonds = diamonds.head(10)[
-        ["player_name_clean", "year", "draft_pick", "pts", "bpm", "raptor_total_mean"]
+        ["player_name_clean", "year", "draft_pick", "pts", "bpm", "war_total_sum", "mp_sum"]
     ]
     print(top_diamonds.to_string(index=False))
 

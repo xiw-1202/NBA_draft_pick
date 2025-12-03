@@ -157,38 +157,45 @@ print("\n7️⃣ Processing physical attributes...")
 
 
 # Height - convert to inches
-def height_to_inches(ht):
-    """Convert height from various formats to inches"""
-    if pd.isna(ht):
-        return np.nan
+# ============================================================================
+# NOTE: Height data is corrupted in the raw CSV files
+# ============================================================================
+# The 'ht' column in the raw data has been corrupted during CSV export/import.
+# Heights like "6-2" (6 feet 2 inches) were converted to dates like "2-Jun".
+# This makes the height data unusable, as all parsing attempts fail and result
+# in the same median value (76.0 inches) for all players.
+#
+# RECOMMENDATION: Exclude height_inches from model features or obtain clean height data.
+# ============================================================================
 
-    ht = str(ht).strip()
+# COMMENTED OUT - Height feature is not usable due to data corruption
+# def height_to_inches(ht):
+#     """Convert height from various formats to inches"""
+#     if pd.isna(ht):
+#         return np.nan
+#     ht = str(ht).strip()
+#     # Format: "6-7" or "6'7" or "6-7"
+#     if "-" in ht or "'" in ht:
+#         parts = ht.replace("'", "-").replace('"', "").split("-")
+#         if len(parts) >= 2:
+#             try:
+#                 feet = int(parts[0])
+#                 inches = int(parts[1])
+#                 return feet * 12 + inches
+#             except:
+#                 return np.nan
+#     return np.nan
+#
+# df["height_inches"] = df["ht"].apply(height_to_inches)
+# # Fill missing heights with position-based median
+# if "position" in df.columns:
+#     position_median_height = df.groupby("position")["height_inches"].transform("median")
+#     df["height_inches"] = df["height_inches"].fillna(position_median_height)
+# # If still missing, use overall median
+# df["height_inches"] = df["height_inches"].fillna(df["height_inches"].median())
+# print(f"   ✅ Processed height (median: {df['height_inches'].median():.1f} inches)")
 
-    # Format: "6-7" or "6'7" or "6-7"
-    if "-" in ht or "'" in ht:
-        parts = ht.replace("'", "-").replace('"', "").split("-")
-        if len(parts) >= 2:
-            try:
-                feet = int(parts[0])
-                inches = int(parts[1])
-                return feet * 12 + inches
-            except:
-                return np.nan
-
-    return np.nan
-
-
-df["height_inches"] = df["ht"].apply(height_to_inches)
-
-# Fill missing heights with position-based median
-if "position" in df.columns:
-    position_median_height = df.groupby("position")["height_inches"].transform("median")
-    df["height_inches"] = df["height_inches"].fillna(position_median_height)
-
-# If still missing, use overall median
-df["height_inches"] = df["height_inches"].fillna(df["height_inches"].median())
-
-print(f"   ✅ Processed height (median: {df['height_inches'].median():.1f} inches)")
+print("   ⚠️  Height feature excluded (data corrupted in raw files)")
 
 # ============================================================================
 # 8. Experience & Development Features
@@ -433,6 +440,46 @@ print(f"   Feature columns: {len(feature_cols)}")
 # ============================================================================
 print("\n1️⃣5️⃣ Creating final feature dataset...")
 
+# Clean feature names for LightGBM compatibility (remove special JSON characters)
+print("   Cleaning feature names...")
+
+
+def clean_feature_name(name):
+    """Remove special characters that cause issues with LightGBM JSON serialization"""
+    name = name.replace("/", "_div_")
+    name = name.replace("(", "_")
+    name = name.replace(")", "_")
+    name = name.replace("+", "_plus_")
+    name = name.replace("-", "_minus_")
+    name = name.replace("*", "_times_")
+    name = name.replace(" ", "_")
+    name = name.replace("[", "_")
+    name = name.replace("]", "_")
+    name = name.replace("{", "_")
+    name = name.replace("}", "_")
+    name = name.replace('"', "_")
+    name = name.replace("'", "_")
+    name = name.replace("\\", "_")
+    name = name.replace(":", "_")
+    # Remove consecutive underscores
+    while "__" in name:
+        name = name.replace("__", "_")
+    # Remove trailing underscores
+    name = name.strip("_")
+    return name
+
+
+# Create mapping of old to new names
+name_mapping = {col: clean_feature_name(col) for col in df.columns}
+
+# Apply name cleaning
+df = df.rename(columns=name_mapping)
+
+# Update feature_cols list with cleaned names
+feature_cols = [clean_feature_name(col) for col in feature_cols]
+
+print(f"   ✅ Cleaned {len([k for k, v in name_mapping.items() if k != v])} feature names")
+
 # Essential columns to keep alongside features
 essential_cols = [
     "player_name_clean",
@@ -440,7 +487,7 @@ essential_cols = [
     "team",
     "conf",
     "yr",
-    "position" if "position" in df.columns else "Unnamed: 64",
+    "position" if "position" in df.columns else "Unnamed_64",
     "was_drafted",
     "draft_pick",
     "is_diamond",
@@ -448,8 +495,8 @@ essential_cols = [
     "war_total_sum",  # Keep for diamond analysis
 ]
 
-# Ensure essential columns exist
-essential_cols = [col for col in essential_cols if col in df.columns]
+# Ensure essential columns exist (with cleaned names)
+essential_cols = [clean_feature_name(col) for col in essential_cols if clean_feature_name(col) in df.columns]
 
 # Final dataset = essential + features
 final_cols = essential_cols + feature_cols

@@ -294,11 +294,17 @@ df_merged["target_drafted"] = df_merged["was_drafted"]
 df_merged["target_draft_pick"] = df_merged["draft_pick"]
 
 # 3. Diamond player indicator
-# Definition: Drafted late (pick > 30) OR undrafted, BUT high NBA performance
+# Definition: Drafted late (pick > 30) OR undrafted, BUT had successful NBA career
+# Success criteria:
+#   - Career WAR >= 10.0 (significant positive contribution)
+#   - Minutes >= 2000 (meaningful playing time, ~1-2 seasons of regular minutes)
+# This filters out players who barely played (e.g., 2-8 minutes with artificially high RAPTOR)
 df_merged["is_low_pick"] = (df_merged["draft_pick"] > 30) | (
     df_merged["was_drafted"] == 0
 )
-df_merged["is_high_nba_performer"] = df_merged["raptor_total_mean"] > 0
+df_merged["is_high_nba_performer"] = (df_merged["war_total_sum"] >= 10.0) & (
+    df_merged["mp_sum"] >= 2000
+)
 df_merged["is_diamond"] = df_merged["is_low_pick"] & df_merged["is_high_nba_performer"]
 
 print(f"   ✅ Target: Drafted = {df_merged['target_drafted'].sum():,}")

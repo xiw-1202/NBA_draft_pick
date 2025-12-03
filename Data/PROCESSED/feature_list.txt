@@ -1,7 +1,7 @@
 FEATURE LIST FOR MODELING
 ================================================================================
 
-Total Features: 139
+Total Features: 138
 
 
 Per-Game Stats (8 features):
@@ -142,17 +142,13 @@ Conference (4 features):
 Position (8 features):
 --------------------------------------------------------------------------------
   - pos_C
-  - pos_Combo G
-  - pos_PF/C
-  - pos_Pure PG
-  - pos_Scoring PG
-  - pos_Stretch 4
-  - pos_Wing F
-  - pos_Wing G
-
-Physical (1 features):
---------------------------------------------------------------------------------
-  - height_inches
+  - pos_Combo_G
+  - pos_PF_div_C
+  - pos_Pure_PG
+  - pos_Scoring_PG
+  - pos_Stretch_4
+  - pos_Wing_F
+  - pos_Wing_G
 
 Other (41 features):
 --------------------------------------------------------------------------------
@@ -160,34 +156,34 @@ Other (41 features):
   - FTM
   - GP
   - Ortg
-  - Rec Rank
+  - Rec_Rank
   - TPA
   - TPM
-  - Unnamed: 65
+  - Unnamed_65
   - adjoe
   - ast
-  - ast/tov
+  - ast_div_tov
   - ast_to_ratio
   - dporpag
   - dunksmade
-  - dunksmade/(dunksmade+dunksmiss)
-  - dunksmiss+dunksmade
+  - dunksmade_div_dunksmade_plus_dunksmiss
+  - dunksmiss_plus_dunksmade
   - eFG
   - ftr
   - is_junior
   - is_sophomore
   - is_starter
   - midmade
-  - midmade+midmiss
-  - midmade/(midmade+midmiss)
+  - midmade_div_midmade_plus_midmiss
+  - midmade_plus_midmiss
   - mp
   - num
   - pfr
   - porpag
   - pts
   - rimmade
-  - rimmade+rimmiss
-  - rimmade/(rimmade+rimmiss)
+  - rimmade_div_rimmade_plus_rimmiss
+  - rimmade_plus_rimmiss
   - scoring_versatility
   - stops
   - total_minutes

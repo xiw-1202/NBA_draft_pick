@@ -1,0 +1,260 @@
+================================================================================
+MODEL TRAINING - NBA DRAFT PREDICTION
+================================================================================
+
+1️⃣ Loading feature-engineered data...
+   Dataset: (25216, 149)
+   Features: 138
+   Players: 25,216
+
+2️⃣ Creating time-based train/test split...
+   Train (2009-2018): 16,643 players (2009-2018)
+   Test (2019-2021):  8,573 players (2019-2021)
+
+   Train drafted: 464 (2.79%)
+   Test drafted:  155 (1.81%)
+
+================================================================================
+3️⃣ CLASSIFIER: Predicting Draft Status
+================================================================================
+
+   Train: X=(16643, 138), y=464 drafted
+   Test:  X=(8573, 138), y=155 drafted
+   Class imbalance ratio: 34.87:1 (undrafted:drafted)
+
+   Training LightGBM Classifier...
+[100]	train's auc: 0.999898	test's auc: 0.96578
+   ✅ Training complete! Best iteration: 51
+
+   📊 Evaluating Classifier...
+
+   Classifier Performance:
+   ├─ Accuracy:  0.9704
+   ├─ Precision: 0.3606
+   ├─ Recall:    0.8258
+   ├─ F1-Score:  0.5020
+   └─ ROC-AUC:   0.9674
+
+   Confusion Matrix:
+   ┌─────────────┬──────────┬──────────┐
+   │             │ Pred: No │ Pred: Yes│
+   ├─────────────┼──────────┼──────────┤
+   │ Actual: No  │    8,191 │      227 │  TN / FP
+   │ Actual: Yes │       27 │      128 │  FN / TP
+   └─────────────┴──────────┴──────────┘
+
+   Classification Report:
+              precision    recall  f1-score   support
+
+   Undrafted       1.00      0.97      0.98      8418
+     Drafted       0.36      0.83      0.50       155
+
+    accuracy                           0.97      8573
+   macro avg       0.68      0.90      0.74      8573
+weighted avg       0.99      0.97      0.98      8573
+
+
+   📋 Feature Importance (Classifier)...
+
+   Top 20 Features for Draft Prediction:
+                 feature    importance
+                 dporpag 143418.942697
+          bpm_career_avg  47295.140865
+      class_year_numeric  15191.152044
+                    gbpm  13847.309767
+          pts_career_avg   7152.502729
+         treb_career_avg   6932.448499
+  treb_total_improvement   5864.114475
+                Rec_Rank   5573.890596
+                  porpag   3697.612371
+            ast_to_ratio   3449.473026
+        years_in_college   2677.827636
+   usg_total_improvement   2669.748442
+                   twoPM   2556.469337
+                     pts   2414.962177
+          usg_career_avg   2338.856296
+                 rim_pct   2241.879220
+           reb_dominance   2191.870678
+                     per   2188.000377
+dunksmiss_plus_dunksmade   2140.427119
+     Min_per_improvement   2042.773086
+
+   💾 Saving classifier...
+   ✅ Saved to: /Users/sam/Documents/School/Emory/Datalab_NBA_Pick/Models/lightgbm_classifier.txt
+
+================================================================================
+8️⃣ REGRESSOR: Predicting Draft Pick Position
+================================================================================
+
+   Train (drafted only): 464 players
+   Test (drafted only):  155 players
+   Pick range - Train: 1 to 60
+   Pick range - Test:  1 to 60
+
+   Training LightGBM Regressor...
+[100]	train's l1: 1.85747	test's l1: 11.9524
+   ✅ Training complete! Best iteration: 74
+
+   📊 Evaluating Regressor...
+
+   Regressor Performance:
+   ├─ MAE (Mean Absolute Error): 11.93 picks
+   ├─ RMSE (Root Mean Squared Error): 15.09 picks
+   └─ R² Score: 0.2474
+
+   Prediction Accuracy:
+   ├─ Within  5 picks: 25.8%
+   ├─ Within 10 picks: 51.6%
+   └─ Within 15 picks: 67.7%
+
+   📋 Feature Importance (Regressor)...
+
+   Top 20 Features for Draft Pick Prediction:
+              feature    importance
+   class_year_numeric 219490.702232
+             Rec_Rank  70660.717926
+       bpm_career_avg  61322.097960
+                 gbpm  31700.244400
+            is_senior  31487.481552
+                  bpm  29445.636490
+pts_total_improvement  23756.969040
+               porpag  22260.778275
+                adjoe  22193.922833
+              dporpag  22180.772934
+                stops  19680.519203
+   Min_per_career_avg  19574.361435
+      pts_improvement  19369.131134
+                  eFG  15590.229397
+                ogbpm  15356.547104
+               TO_per  15318.129292
+             twoP_per  15127.342209
+                  pts  14979.387009
+    TS_per_career_avg  14665.151903
+                adrtg  13738.357498
+
+   💾 Saving regressor...
+   ✅ Saved to: /Users/sam/Documents/School/Emory/Datalab_NBA_Pick/Models/lightgbm_regressor.txt
+
+================================================================================
+1️⃣3️⃣ DIAMOND PLAYER DETECTION
+================================================================================
+
+   💎 Diamond Player Analysis:
+   ├─ Actual diamonds in test set: 1
+   ├─ Model predicted diamonds: 21
+   └─ Overlap (correctly identified): 0
+
+   🏆 Top 10 Real Diamond Players (by NBA RAPTOR):
+player_name_clean  year  draft_pick      ppg      bpm  raptor_total_mean  predicted_drafted_proba
+    Isaiah Thomas  2019        60.0 0.105861 -5.25484          -0.828747                 0.137661
+
+   ⚠️  Model Predicted Diamonds but Drafted High (False Alarms): 14
+player_name_clean  year  draft_pick      ppg      bpm  raptor_total_mean  predicted_drafted_proba
+ Anthony Davis Jr  2020         1.0 0.666650 -4.83566           4.825706                 0.002891
+    Austin Reaves  2021        29.0 0.731200  5.74304           0.412926                 0.066177
+Charles Brown III  2019        29.0 0.431724 -5.39664           6.350950                 0.002400
+     Chris Duarte  2021        13.0 0.658285  9.33922           0.535631                 0.822264
+    Corey Kispert  2021        15.0 0.581056  9.90794           1.510660                 0.819204
+
+1️⃣4️⃣ Saving predictions and results...
+   ✅ Test predictions saved to: test_predictions.csv
+   ✅ Actual diamonds saved to: actual_diamond_players.csv (1 players)
+   ✅ Predicted diamonds saved to: predicted_diamond_players.csv (21 players)
+
+1️⃣5️⃣ Creating summary report...
+
+================================================================================
+NBA DRAFT PREDICTION - MODEL TRAINING SUMMARY
+================================================================================
+
+Date: 2025-12-02 19:13:33
+
+DATASET:
+--------
+Training Set (2009-2018): 16,643 players
+Test Set (2019-2021):     8,573 players
+Features Used:            138
+
+CLASSIFIER PERFORMANCE (Draft Status):
+--------------------------------------
+Accuracy:   0.9704
+Precision:  0.3606
+Recall:     0.8258
+F1-Score:   0.5020
+ROC-AUC:    0.9674
+
+Confusion Matrix:
+                Predicted
+                No      Yes
+Actual  No      8,191   227
+        Yes     27     128
+
+REGRESSOR PERFORMANCE (Draft Pick):
+------------------------------------
+MAE (Mean Absolute Error):  11.93 picks
+RMSE:                       15.09 picks
+R² Score:                   0.2474
+
+Prediction Accuracy:
+- Within  5 picks: 25.8%
+- Within 10 picks: 51.6%
+- Within 15 picks: 67.7%
+
+DIAMOND PLAYER DETECTION:
+--------------------------
+Actual diamonds in test:      1
+Model predicted diamonds:     21
+Correctly identified:         0
+
+TOP FEATURES (CLASSIFIER):
+--------------------------
+               feature    importance
+               dporpag 143418.942697
+        bpm_career_avg  47295.140865
+    class_year_numeric  15191.152044
+                  gbpm  13847.309767
+        pts_career_avg   7152.502729
+       treb_career_avg   6932.448499
+treb_total_improvement   5864.114475
+              Rec_Rank   5573.890596
+                porpag   3697.612371
+          ast_to_ratio   3449.473026
+
+TOP FEATURES (REGRESSOR):
+-------------------------
+              feature    importance
+   class_year_numeric 219490.702232
+             Rec_Rank  70660.717926
+       bpm_career_avg  61322.097960
+                 gbpm  31700.244400
+            is_senior  31487.481552
+                  bpm  29445.636490
+pts_total_improvement  23756.969040
+               porpag  22260.778275
+                adjoe  22193.922833
+              dporpag  22180.772934
+
+OUTPUT FILES:
+-------------
+✅ Models/lightgbm_classifier.txt
+✅ Models/lightgbm_regressor.txt
+✅ Models/classifier_feature_importance.csv
+✅ Models/regressor_feature_importance.csv
+✅ Models/test_predictions.csv
+✅ Models/actual_diamond_players.csv
+✅ Models/predicted_diamond_players.csv
+✅ Models/training_summary.txt
+
+================================================================================
+
+================================================================================
+✅ MODEL TRAINING COMPLETE!
+================================================================================
+
+📁 All results saved to: /Users/sam/Documents/School/Emory/Datalab_NBA_Pick/Models
+
+🎯 Next steps:
+   1. Review feature importance: head Models/classifier_feature_importance.csv
+   2. Check diamond players: head Models/actual_diamond_players.csv
+   3. Analyze predictions: head Models/test_predictions.csv
+   4. Create visualizations (optional)

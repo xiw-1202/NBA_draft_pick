@@ -8,7 +8,7 @@
 
 ## 📋 Project Overview
 
-This project uses LightGBM models with 139 engineered features to predict NBA draft outcomes and identify undervalued talent from college basketball statistics.
+This project uses LightGBM models with **138 engineered features** to predict NBA draft outcomes and identify undervalued talent from college basketball statistics.
 
 ### Key Objectives:
 
@@ -18,12 +18,19 @@ This project uses LightGBM models with 139 engineered features to predict NBA dr
 
 ### What is a "Diamond Player"? 💎
 
-Players who were:
-
+**Definition:** Players who were:
 - Drafted in the 2nd round (picks 31-60) **OR** undrafted
-- **BUT** achieved high NBA performance (RAPTOR > 0, indicating above-average impact)
+- **AND** had successful NBA careers:
+  - Career WAR (Wins Above Replacement) ≥ 10.0
+  - Career minutes ≥ 2,000 (~1-2 seasons of regular playing time)
 
-**Examples:** Malcolm Brogdon (#36, 2016), Draymond Green (#35, 2012), Isaiah Thomas (#60, 2011)
+This filters out players with tiny sample sizes and identifies genuine NBA contributors.
+
+**Examples:**
+- **Draymond Green** (#35, 2012) - 4× All-Star, 4× Champion, 96.9 career WAR
+- **Danny Green** (#46, 2009) - 3× Champion, 60.2 career WAR
+- **Fred VanVleet** (Undrafted, 2016) - All-Star, Champion, 24.7 career WAR
+- **Isaiah Thomas** (#60, 2019) - 2× All-Star, 30.3 career WAR
 
 ---
 
@@ -42,9 +49,10 @@ Players who were:
 
 ### Diamond Detection
 
-- **28 diamond players** identified in test set (2019-2021)
-- **50% detection rate** - Model correctly identified 14 of 28 diamonds
-- Top diamond: **JaQuori McLaughlin** (RAPTOR: 23.4, Model prob: 74.7%)
+- **1 diamond player** in test set (2019-2021): **Isaiah Thomas** (#60 pick)
+- **0% detection rate** - Challenging to predict from college stats alone
+- Note: Most diamonds emerge from earlier years (2009-2018) due to career development time
+- **43 total diamonds** identified across full dataset with our strict criteria
 
 ### Performance Visualizations
 
@@ -143,7 +151,7 @@ Datalab_NBA_Pick/
 ├── src/                          # Main pipeline scripts
 │   ├── 1_data_processing.py      # Merge and process raw data
 │   ├── 2_data_cleaning.py        # Clean and validate data
-│   ├── 3_feature_engineering.py  # Create 139 features
+│   ├── 3_feature_engineering.py  # Create 138 features
 │   ├── 4_model_training.py       # Train LightGBM models
 │   ├── 5_analyze_results.py      # Evaluate model performance
 │   └── 6_visualizations.py       # Generate plots and charts
@@ -171,7 +179,7 @@ Datalab_NBA_Pick/
 - **Time-based split:** Train (2009-2018), Test (2019-2021)
 
 ### Feature Engineering
-- **139 engineered features** across 11 categories:
+- **138 engineered features** across 11 categories:
   - Basic stats (points, rebounds, assists)
   - Advanced metrics (PER, BPM, TS%)
   - Efficiency ratios
@@ -181,6 +189,7 @@ Datalab_NBA_Pick/
   - Defensive ratings
   - Conference strength
   - Class year indicators
+  - **Note:** Height feature removed due to data corruption in source files
 
 ### Models
 - **LightGBM Classifier:** Predicts draft probability
@@ -197,25 +206,30 @@ Datalab_NBA_Pick/
 
 ---
 
-## 💎 Top Diamond Players Found
+## 💎 Diamond Players Across Full Dataset (2009-2021)
 
-| Player             | Year | Draft     | NBA RAPTOR | Model Probability |
-| ------------------ | ---- | --------- | ---------- | ----------------- |
-| JaQuori McLaughlin | 2021 | Undrafted | 23.4       | 74.7% ✓           |
-| Devon Dotson       | 2020 | Undrafted | 14.0       | 91.6% ✓           |
-| Max Strus          | 2019 | Undrafted | 12.2       | 8.6% ✗            |
+| Player | Draft Pick | Career WAR | NBA Seasons | Achievements |
+| ------ | ---------- | ---------- | ----------- | ------------ |
+| **Draymond Green** | #35 (2012) | 96.9 | 9 | 4× All-Star, 4× Champion, DPOY |
+| **Danny Green** | #46 (2009) | 60.2 | 9 | 3× Champion, Elite 3&D |
+| **Khris Middleton** | #39 (2012) | 54.2 | 9 | 3× All-Star, Champion |
+| **Robert Covington** | Undrafted | 39.2 | 9 | Elite defensive wing |
+| **Fred VanVleet** | Undrafted | 24.7 | 6 | All-Star, Champion |
+
+**Total:** 43 diamond players identified (late picks/undrafted with WAR ≥10, minutes ≥2000)
 
 ![Diamond Players](Visualizations/4_diamond_players.png)
-*Diamond player detection - comparing actual vs predicted undervalued talents*
+*Diamond player detection analysis showing the challenge of predicting NBA success from college stats*
 
 ---
 
 ## 🔬 Key Features
 
-1. **Comprehensive Feature Engineering:** 139 features including career trajectory and improvement metrics
+1. **Comprehensive Feature Engineering:** 138 features including career trajectory and improvement metrics
 2. **Time-Based Validation:** Realistic temporal split prevents data leakage
-3. **Diamond Detection:** Custom scoring system to identify undervalued talent
+3. **Diamond Detection:** Strict NBA success criteria (WAR ≥10, minutes ≥2000) to identify real undervalued talent
 4. **Interpretable Models:** Feature importance analysis reveals draft insights
+5. **Data Quality:** Identified and documented data corruption issues (height data) for transparency
 
 ---
 

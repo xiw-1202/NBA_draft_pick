@@ -56,11 +56,23 @@ This filters out players with tiny sample sizes and identifies genuine NBA contr
 
 ### Performance Visualizations
 
+All visualizations have been redesigned with professional, easy-to-understand layouts:
+
 ![Performance Dashboard](Visualizations/6_performance_dashboard.png)
 *Comprehensive model performance metrics across all evaluation criteria*
 
 ![Feature Importance](Visualizations/1_feature_importance.png)
-*Top 15 most important features for draft prediction - defensive rating leads*
+*Top 12 most important features for draft prediction - defensive rating leads*
+
+![Prediction Analysis](Visualizations/3_prediction_distribution.png)
+*Model confidence analysis showing prediction accuracy across different ranges*
+
+**Visualization Features:**
+- Classic professional color palette (blues, grays, orange accents)
+- Clear, intuitive chart designs without technical jargon
+- Plain English labels and explanations
+- Properly scaled axes based on actual data
+- Professional typography and clean layouts
 
 ---
 
